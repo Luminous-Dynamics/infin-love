@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infin.Love - Sacred Reciprocity & Infinite Love</title>
+    <meta name="description" content="A sacred space for reciprocal giving, community circles, and the practice of infinite love through generous flow.">
+    
+    <style>
+        :root {
+            --love-pink: #E91E63;
+            --heart-rose: #F06292;
+            --sacred-gold: #FFD700;
+            --soft-purple: #9C27B0;
+            --deep-violet: #4A148C;
+            --pure-white: #ffffff;
+            --soft-black: #1a1a2e;
+            --phi: 1.618;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Palatino', serif;
+            background: linear-gradient(135deg, #F06292 0%, #BA68C8 50%, #7C4DFF 100%);
+            color: var(--pure-white);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Heart Animation Background */
+        .hearts-container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes float-up {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) scale(0);
+            }
+            15% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) scale(1.5);
+            }
+        }
+
+        .heart {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.3);
+            animation: float-up 10s linear infinite;
+        }
+
+        /* Navigation */
+        nav {
+            position: relative;
+            z-index: 1000;
+            padding: 1.5rem 2rem;
+            background: rgba(26, 26, 46, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--sacred-gold);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--pure-white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--sacred-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            z-index: 10;
+            padding: 6rem 2rem;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 5rem);
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            font-style: italic;
+        }
+
+        .breathing-text {
+            animation: breathe 4s ease-in-out infinite;
+        }
+
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.95; }
+        }
+
+        /* Sacred Reciprocity Section */
+        .reciprocity {
+            position: relative;
+            z-index: 10;
+            padding: 4rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .section-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .reciprocity h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--sacred-gold);
+        }
+
+        .flow-diagram {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .flow-node {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .flow-node:hover {
+            transform: scale(1.1);
+        }
+
+        .flow-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .flow-label {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* Gift Circles */
+        .gift-circles {
+            position: relative;
+            z-index: 10;
+            padding: 4rem 2rem;
+        }
+
+        .circles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .circle-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .circle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.3);
+        }
+
+        .circle-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .circle-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--sacred-gold);
+        }
+
+        .circle-description {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .circle-btn {
+            background: linear-gradient(135deg, var(--love-pink), var(--soft-purple));
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .circle-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Community Section */
+        .community {
+            position: relative;
+            z-index: 10;
+            padding: 4rem 2rem;
+            background: rgba(74, 20, 140, 0.2);
+        }
+
+        .community-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 3rem auto;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--sacred-gold);
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+            color: var(--pure-white);
+        }
+
+        /* Sacred Economics */
+        .economics {
+            position: relative;
+            z-index: 10;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .economics-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .economics h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--sacred-gold);
+        }
+
+        .economics-text {
+            font-size: 1.2rem;
+            line-height: 2;
+            margin-bottom: 3rem;
+        }
+
+        .principles-list {
+            text-align: left;
+            display: inline-block;
+            margin: 2rem 0;
+        }
+
+        .principle {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            gap: 1rem;
+        }
+
+        .principle-icon {
+            color: var(--sacred-gold);
+            font-size: 1.5rem;
+        }
+
+        /* Join Section */
+        .join {
+            position: relative;
+            z-index: 10;
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, rgba(233, 30, 99, 0.2), rgba(156, 39, 176, 0.2));
+            text-align: center;
+        }
+
+        .join h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--sacred-gold);
+        }
+
+        .join-form {
+            max-width: 500px;
+            margin: 3rem auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, var(--love-pink), var(--soft-purple));
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            position: relative;
+            z-index: 10;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: var(--soft-black);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--heart-rose);
+            text-decoration: none;
+        }
+
+        .footer-quote {
+            font-style: italic;
+            color: var(--sacred-gold);
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .flow-diagram {
+                flex-direction: column;
+            }
+            
+            .circles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="hearts-container"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">∞ Infin.Love</a>
+            <div class="nav-links">
+                <a href="#reciprocity">Sacred Reciprocity</a>
+                <a href="#circles">Gift Circles</a>
+                <a href="#community">Community</a>
+                <a href="#join">Join</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="breathing-text">Infinite Love</h1>
+        <p class="hero-subtitle">Through Sacred Reciprocity</p>
+        <p style="max-width: 600px; font-size: 1.2rem; line-height: 1.8; margin: 2rem auto;">
+            A sacred space where giving and receiving flow as one river. 
+            Where abundance multiplies through sharing. Where every act of generosity 
+            creates ripples of love that return transformed.
+        </p>
+    </section>
+
+    <!-- Sacred Reciprocity -->
+    <section class="reciprocity" id="reciprocity">
+        <div class="section-container">
+            <h2>The Sacred Flow</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">
+                In sacred reciprocity, we don't track debts—we celebrate flows.
+            </p>
+            
+            <div class="flow-diagram">
+                <div class="flow-node">
+                    <div class="flow-icon">💝</div>
+                    <div class="flow-label">Give Freely</div>
+                </div>
+                <div class="flow-node">
+                    <div class="flow-icon">🌊</div>
+                    <div class="flow-label">Energy Flows</div>
+                </div>
+                <div class="flow-node">
+                    <div class="flow-icon">✨</div>
+                    <div class="flow-label">Abundance Multiplies</div>
+                </div>
+                <div class="flow-node">
+                    <div class="flow-icon">💫</div>
+                    <div class="flow-label">Love Returns</div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-style: italic; margin-top: 3rem;">
+                "The gift must always move" — Lewis Hyde
+            </p>
+        </div>
+    </section>
+
+    <!-- Gift Circles -->
+    <section class="gift-circles" id="circles">
+        <div class="section-container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--sacred-gold);">
+                Sacred Gift Circles
+            </h2>
+            
+            <div class="circles-grid">
+                <!-- Wisdom Circle -->
+                <div class="circle-card">
+                    <div class="circle-icon">🦉</div>
+                    <h3 class="circle-title">Wisdom Circle</h3>
+                    <p class="circle-description">
+                        Share knowledge, mentorship, and life experience. 
+                        Every teaching is a gift that enriches the whole.
+                    </p>
+                    <a href="#join" class="circle-btn">Join Circle</a>
+                </div>
+                
+                <!-- Creativity Circle -->
+                <div class="circle-card">
+                    <div class="circle-icon">🎨</div>
+                    <h3 class="circle-title">Creativity Circle</h3>
+                    <p class="circle-description">
+                        Exchange art, music, writing, and creative inspiration. 
+                        Beauty multiplies when shared.
+                    </p>
+                    <a href="#join" class="circle-btn">Join Circle</a>
+                </div>
+                
+                <!-- Healing Circle -->
+                <div class="circle-card">
+                    <div class="circle-icon">🌿</div>
+                    <h3 class="circle-title">Healing Circle</h3>
+                    <p class="circle-description">
+                        Offer and receive emotional support, healing practices, 
+                        and sacred witness to each other's journey.
+                    </p>
+                    <a href="#join" class="circle-btn">Join Circle</a>
+                </div>
+                
+                <!-- Service Circle -->
+                <div class="circle-card">
+                    <div class="circle-icon">🤝</div>
+                    <h3 class="circle-title">Service Circle</h3>
+                    <p class="circle-description">
+                        Share skills, time, and practical help. Every act of 
+                        service strengthens our web of connection.
+                    </p>
+                    <a href="#join" class="circle-btn">Join Circle</a>
+                </div>
+                
+                <!-- Abundance Circle -->
+                <div class="circle-card">
+                    <div class="circle-icon">🌻</div>
+                    <h3 class="circle-title">Abundance Circle</h3>
+                    <p class="circle-description">
+                        Share resources, opportunities, and material support. 
+                        Abundance flows to where it's needed.
+                    </p>
+                    <a href="#join" class="circle-btn">Join Circle</a>
+                </div>
+                
+                <!-- Sacred Tech Circle -->
+                <div class="circle-card">
+                    <div class="circle-icon">💻</div>
+                    <h3 class="circle-title">Sacred Tech Circle</h3>
+                    <p class="circle-description">
+                        Build consciousness-first technology together. Code as 
+                        prayer, systems as temples of awareness.
+                    </p>
+                    <a href="#join" class="circle-btn">Join Circle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Features -->
+    <section class="community" id="community">
+        <div class="section-container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--sacred-gold);">
+                Living in Sacred Community
+            </h2>
+            
+            <div class="community-features">
+                <div class="feature">
+                    <div class="feature-icon">🏡</div>
+                    <h3>Resonant Hearths</h3>
+                    <p>Local gatherings in homes where sacred reciprocity comes alive</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Circles</h3>
+                    <p>Online communities practicing gift economy across the world</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>Sacred Ceremonies</h3>
+                    <p>Monthly rituals celebrating abundance and gratitude</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📖</div>
+                    <h3>Story Sharing</h3>
+                    <p>Witness the magic of how gifts transform lives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sacred Economics -->
+    <section class="economics">
+        <div class="economics-content">
+            <h2>Sacred Economics in Practice</h2>
+            <p class="economics-text">
+                We're building an economy based on love rather than scarcity, 
+                generosity rather than accumulation, and trust rather than contract.
+            </p>
+            
+            <div class="principles-list">
+                <div class="principle">
+                    <span class="principle-icon">💜</span>
+                    <span>Gifts create relationships, not transactions</span>
+                </div>
+                <div class="principle">
+                    <span class="principle-icon">🌊</span>
+                    <span>Money flows like water to where it's needed</span>
+                </div>
+                <div class="principle">
+                    <span class="principle-icon">✨</span>
+                    <span>Abundance increases through circulation</span>
+                </div>
+                <div class="principle">
+                    <span class="principle-icon">🤲</span>
+                    <span>Receiving is as sacred as giving</span>
+                </div>
+                <div class="principle">
+                    <span class="principle-icon">💫</span>
+                    <span>Trust replaces control</span>
+                </div>
+            </div>
+            
+            <p style="margin-top: 3rem;">
+                <a href="https://ko-fi.com/luminousdynamics" class="circle-btn">
+                    Support This Sacred Work
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section class="join" id="join">
+        <h2>Enter the Sacred Flow</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 3rem;">
+            Join our community of sacred reciprocity
+        </p>
+        
+        <form class="join-form" id="reciprocity-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="What gift do you bring to the circle?"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Join the Flow</button>
+        </form>
+        
+        <p style="margin-top: 2rem; opacity: 0.9;">
+            By joining, you enter a sacred covenant of generous giving and gracious receiving
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://luminousdynamics.org">Luminous Dynamics</a>
+            <a href="https://evolvingresonantcocreationism.com">Philosophy</a>
+            <a href="https://ko-fi.com/luminousdynamics">Support</a>
+            <a href="mailto:tristan.stoltz@gmail.com">Contact</a>
+        </div>
+        <p style="opacity: 0.7;">© 2025 Infin.Love - A Luminous Dynamics Sacred Space</p>
+        <p class="footer-quote">
+            "Love is the only thing that multiplies when shared" 💜
+        </p>
+    </footer>
+
+    <!-- JavaScript for Hearts and Interactions -->
+    <script>
+        // Generate floating hearts
+        const heartsContainer = document.getElementById('hearts-container');
+        const hearts = ['💜', '💝', '💖', '💗', '💕', '💓', '💞'];
+        
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = Math.random() * 5 + 10 + 's';
+            heart.style.fontSize = Math.random() * 20 + 20 + 'px';
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            heartsContainer.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 15000);
+        }
+        
+        // Create hearts periodically
+        setInterval(createHeart, 3000);
+        
+        // Create initial hearts
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createHeart, i * 1000);
+        }
+        
+        // Form submission
+        document.getElementById('reciprocity-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for joining the sacred flow! We will contact you soon with ways to participate in our gift circles. 💜');
+            e.target.reset();
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+    <!-- Ko-fi Widget -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('luminousdynamics', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': '💜',
+            'floating-chat.donateButton.background-color': '#E91E63',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
+</body>
+</html>
