@@ -6,6 +6,15 @@
     <title>Infin.Love - Sacred Reciprocity & Infinite Love</title>
     <meta name="description" content="A sacred space for reciprocal giving, community circles, and the practice of infinite love through generous flow.">
     
+    <!-- SEO & Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://infin.love/">
+    <meta property="og:title" content="Infin.Love - Sacred Reciprocity">
+    <meta property="og:description" content="Join gift circles where abundance multiplies through sharing. Sacred economics in practice.">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Infin.Love">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💜</text></svg>">
+    
     <style>
         :root {
             --love-pink: #E91E63;
@@ -706,13 +715,24 @@
             }, 15000);
         }
         
-        // Create hearts periodically
-        setInterval(createHeart, 3000);
+        // Create hearts periodically with varying frequency
+        setInterval(createHeart, 2000);
+        setInterval(createHeart, 3500);
         
         // Create initial hearts
-        for (let i = 0; i < 5; i++) {
-            setTimeout(createHeart, i * 1000);
+        for (let i = 0; i < 8; i++) {
+            setTimeout(createHeart, i * 800);
         }
+        
+        // Create hearts on mouse move (subtle)
+        let lastHeartTime = 0;
+        document.addEventListener('mousemove', (e) => {
+            const now = Date.now();
+            if (now - lastHeartTime > 5000) { // Only every 5 seconds
+                lastHeartTime = now;
+                createHeart();
+            }
+        });
         
         // Form submission handled by Formspree
         // No JavaScript needed - form will submit to Formspree and redirect back
