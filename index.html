@@ -650,16 +650,20 @@
             Join our community of sacred reciprocity
         </p>
         
-        <form class="join-form" id="reciprocity-form">
+        <form class="join-form" id="reciprocity-form" action="https://formspree.io/f/xzzawddk" method="POST">
             <div class="form-group">
-                <input type="text" placeholder="Your Name" required>
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-                <input type="email" placeholder="Your Email" required>
+                <input type="email" name="email" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-                <textarea placeholder="What gift do you bring to the circle?"></textarea>
+                <textarea name="gift" placeholder="What gift do you bring to the circle?"></textarea>
             </div>
+            <!-- Anti-spam honeypot -->
+            <input type="text" name="_gotcha" style="display:none">
+            <!-- Custom subject -->
+            <input type="hidden" name="_subject" value="New Sacred Circle Member from Infin.Love!">
             <button type="submit" class="submit-btn">Join the Flow</button>
         </form>
         
@@ -710,12 +714,8 @@
             setTimeout(createHeart, i * 1000);
         }
         
-        // Form submission
-        document.getElementById('reciprocity-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for joining the sacred flow! We will contact you soon with ways to participate in our gift circles. 💜');
-            e.target.reset();
-        });
+        // Form submission handled by Formspree
+        // No JavaScript needed - form will submit to Formspree and redirect back
         
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
