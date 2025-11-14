@@ -1,0 +1,11 @@
+# robots.txt for infin.love
+# Sacred Reciprocity & Infinite Love
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://infin.love/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
