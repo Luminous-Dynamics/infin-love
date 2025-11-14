@@ -5,15 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infin.Love - Sacred Reciprocity & Infinite Love</title>
     <meta name="description" content="A sacred space for reciprocal giving, community circles, and the practice of infinite love through generous flow.">
-    
+    <meta name="theme-color" content="#E91E63">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://storage.ko-fi.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://formspree.io https://storage.ko-fi.com; frame-src https://ko-fi.com;">
+    <link rel="canonical" href="https://infin.love/">
+
     <!-- SEO & Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://infin.love/">
     <meta property="og:title" content="Infin.Love - Sacred Reciprocity">
     <meta property="og:description" content="Join gift circles where abundance multiplies through sharing. Sacred economics in practice.">
+    <meta property="og:image" content="https://infin.love/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Infin.Love">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Infin.Love">
+    <meta property="twitter:title" content="Infin.Love - Sacred Reciprocity">
+    <meta property="twitter:description" content="Join gift circles where abundance multiplies through sharing. Sacred economics in practice.">
+    <meta property="twitter:image" content="https://infin.love/og-image.jpg">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💜</text></svg>">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Infin.Love",
+      "url": "https://infin.love",
+      "logo": "https://infin.love/logo.png",
+      "description": "A sacred space for reciprocal giving, community circles, and the practice of infinite love through generous flow",
+      "sameAs": [
+        "https://luminousdynamics.org",
+        "https://ko-fi.com/luminousdynamics"
+      ],
+      "foundingDate": "2025",
+      "founder": {
+        "@type": "Person",
+        "name": "Tristan Stoltz"
+      }
+    }
+    </script>
     
     <style>
         :root {
@@ -74,7 +104,8 @@
 
         /* Navigation */
         nav {
-            position: relative;
+            position: sticky;
+            top: 0;
             z-index: 1000;
             padding: 1.5rem 2rem;
             background: rgba(26, 26, 46, 0.3);
@@ -110,6 +141,43 @@
 
         .nav-links a:hover {
             color: var(--sacred-gold);
+        }
+
+        .nav-links a:focus {
+            outline: 2px solid var(--sacred-gold);
+            outline-offset: 4px;
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--pure-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .menu-toggle:focus {
+            outline: 2px solid var(--sacred-gold);
+            outline-offset: 4px;
+        }
+
+        /* Skip to content link for accessibility */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--soft-black);
+            color: var(--sacred-gold);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            z-index: 10000;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
         }
 
         /* Hero Section */
@@ -394,6 +462,48 @@
             transform: translateY(-3px);
         }
 
+        .submit-btn:focus,
+        .circle-btn:focus {
+            outline: 2px solid var(--sacred-gold);
+            outline-offset: 4px;
+        }
+
+        /* Form Labels for Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Form Feedback Messages */
+        .form-message {
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            text-align: center;
+            display: none;
+        }
+
+        .form-message.success {
+            background: rgba(76, 175, 80, 0.2);
+            border: 1px solid rgba(76, 175, 80, 0.5);
+        }
+
+        .form-message.error {
+            background: rgba(244, 67, 54, 0.2);
+            border: 1px solid rgba(244, 67, 54, 0.5);
+        }
+
+        .form-message.show {
+            display: block;
+        }
+
         /* Footer */
         footer {
             position: relative;
@@ -425,29 +535,66 @@
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
             .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(26, 26, 46, 0.95);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                padding: 1rem 0;
+                gap: 0;
                 display: none;
             }
-            
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 1rem 2rem;
+                width: 100%;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
             .flow-diagram {
                 flex-direction: column;
             }
-            
+
             .circles-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <!-- Floating Hearts Background -->
-    <div class="hearts-container" id="hearts-container"></div>
+    <div class="hearts-container" id="hearts-container" aria-hidden="true"></div>
 
     <!-- Navigation -->
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="#" class="logo">∞ Infin.Love</a>
-            <div class="nav-links">
+            <a href="#" class="logo" aria-label="Infin.Love homepage">∞ Infin.Love</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span id="menu-icon">☰</span>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="#reciprocity">Sacred Reciprocity</a>
                 <a href="#circles">Gift Circles</a>
                 <a href="#community">Community</a>
@@ -457,12 +604,13 @@
     </nav>
 
     <!-- Hero Section -->
+    <main id="main-content">
     <section class="hero">
         <h1 class="breathing-text">Infinite Love</h1>
         <p class="hero-subtitle">Through Sacred Reciprocity</p>
         <p style="max-width: 600px; font-size: 1.2rem; line-height: 1.8; margin: 2rem auto;">
-            A sacred space where giving and receiving flow as one river. 
-            Where abundance multiplies through sharing. Where every act of generosity 
+            A sacred space where giving and receiving flow as one river.
+            Where abundance multiplies through sharing. Where every act of generosity
             creates ripples of love that return transformed.
         </p>
     </section>
@@ -658,38 +806,47 @@
         <p style="font-size: 1.2rem; margin-bottom: 3rem;">
             Join our community of sacred reciprocity
         </p>
-        
+
+        <div id="form-feedback" class="form-message" role="alert" aria-live="polite"></div>
+
         <form class="join-form" id="reciprocity-form" action="https://formspree.io/f/xzzawddk" method="POST">
             <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
+                <label for="name" class="visually-hidden">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
             </div>
             <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
+                <label for="email" class="visually-hidden">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
             </div>
             <div class="form-group">
-                <textarea name="gift" placeholder="What gift do you bring to the circle?"></textarea>
+                <label for="gift" class="visually-hidden">What gift do you bring to the circle?</label>
+                <textarea id="gift" name="gift" placeholder="What gift do you bring to the circle?" aria-describedby="gift-description"></textarea>
+                <span id="gift-description" class="visually-hidden">Optional: Share what you'd like to contribute to the community</span>
             </div>
             <!-- Anti-spam honeypot -->
-            <input type="text" name="_gotcha" style="display:none">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <!-- Custom subject -->
             <input type="hidden" name="_subject" value="New Sacred Circle Member from Infin.Love!">
-            <button type="submit" class="submit-btn">Join the Flow</button>
+            <button type="submit" class="submit-btn" id="submit-btn">Join the Flow</button>
         </form>
-        
+
         <p style="margin-top: 2rem; opacity: 0.9;">
             By joining, you enter a sacred covenant of generous giving and gracious receiving
         </p>
     </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="https://luminousdynamics.org">Luminous Dynamics</a>
-            <a href="https://evolvingresonantcocreationism.com">Philosophy</a>
-            <a href="https://ko-fi.com/luminousdynamics">Support</a>
-            <a href="mailto:tristan.stoltz@gmail.com">Contact</a>
-        </div>
-        <p style="opacity: 0.7;">© 2025 Infin.Love - A Luminous Dynamics Sacred Space</p>
+    <footer role="contentinfo">
+        <nav aria-label="Footer navigation">
+            <div class="footer-links">
+                <a href="https://luminousdynamics.org" rel="noopener noreferrer" target="_blank">Luminous Dynamics</a>
+                <a href="https://evolvingresonantcocreationism.com" rel="noopener noreferrer" target="_blank">Philosophy</a>
+                <a href="https://ko-fi.com/luminousdynamics" rel="noopener noreferrer" target="_blank">Support</a>
+                <a href="mailto:tristan.stoltz@gmail.com">Contact</a>
+            </div>
+        </nav>
+        <p style="opacity: 0.7;" id="copyright">© <span id="current-year">2025</span> Infin.Love - A Luminous Dynamics Sacred Space</p>
         <p class="footer-quote">
             "Love is the only thing that multiplies when shared" 💜
         </p>
@@ -697,33 +854,63 @@
 
     <!-- JavaScript for Hearts and Interactions -->
     <script>
-        // Generate floating hearts
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+            menuIcon.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuIcon.textContent = '☰';
+            });
+        });
+
+        // Generate floating hearts with performance optimization
         const heartsContainer = document.getElementById('hearts-container');
         const hearts = ['💜', '💝', '💖', '💗', '💕', '💓', '💞'];
-        
+        let heartCount = 0;
+        const MAX_HEARTS = 15;
+
         function createHeart() {
+            // Limit total hearts for performance
+            if (heartCount >= MAX_HEARTS) return;
+
+            heartCount++;
             const heart = document.createElement('div');
             heart.className = 'heart';
             heart.style.left = Math.random() * 100 + '%';
-            heart.style.animationDuration = Math.random() * 5 + 10 + 's';
-            heart.style.fontSize = Math.random() * 20 + 20 + 'px';
+            heart.style.animationDuration = (Math.random() * 5 + 10) + 's';
+            heart.style.fontSize = (Math.random() * 20 + 20) + 'px';
             heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
             heartsContainer.appendChild(heart);
-            
+
             setTimeout(() => {
                 heart.remove();
+                heartCount--;
             }, 15000);
         }
-        
-        // Create hearts periodically with varying frequency
-        setInterval(createHeart, 2000);
-        setInterval(createHeart, 3500);
-        
+
+        // Create hearts periodically with single interval
+        let heartInterval = setInterval(createHeart, 2500);
+
         // Create initial hearts
-        for (let i = 0; i < 8; i++) {
-            setTimeout(createHeart, i * 800);
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createHeart, i * 1000);
         }
-        
+
         // Create hearts on mouse move (subtle)
         let lastHeartTime = 0;
         document.addEventListener('mousemove', (e) => {
@@ -733,30 +920,73 @@
                 createHeart();
             }
         });
-        
-        // Form submission handled by Formspree
-        // No JavaScript needed - form will submit to Formspree and redirect back
-        
-        // Smooth scrolling
+
+        // Pause hearts when tab is not visible (performance)
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                clearInterval(heartInterval);
+            } else {
+                heartInterval = setInterval(createHeart, 2500);
+            }
+        });
+
+        // Form submission handling
+        const form = document.getElementById('reciprocity-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const formFeedback = document.getElementById('form-feedback');
+
+        form.addEventListener('submit', (e) => {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Joining...';
+
+            // Note: Form will submit naturally to Formspree
+            // This just provides better UX feedback
+        });
+
+        // Check for Formspree success/error in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('success')) {
+            formFeedback.textContent = '✨ Welcome to the sacred flow! Check your email for confirmation.';
+            formFeedback.className = 'form-message success show';
+            form.reset();
+        } else if (urlParams.has('error')) {
+            formFeedback.textContent = 'There was an error submitting the form. Please try again.';
+            formFeedback.className = 'form-message error show';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Join the Flow';
+        }
+
+        // Smooth scrolling with accessibility support
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const target = document.querySelector(href);
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth' });
+                    // Set focus to target for accessibility
+                    target.setAttribute('tabindex', '-1');
+                    target.focus();
                 }
             });
         });
     </script>
 
     <!-- Ko-fi Widget -->
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' async defer></script>
     <script>
-        kofiWidgetOverlay.draw('luminousdynamics', {
-            'type': 'floating-chat',
-            'floating-chat.donateButton.text': '💜',
-            'floating-chat.donateButton.background-color': '#E91E63',
-            'floating-chat.donateButton.text-color': '#fff'
+        // Load Ko-fi widget after page loads
+        window.addEventListener('load', () => {
+            if (typeof kofiWidgetOverlay !== 'undefined') {
+                kofiWidgetOverlay.draw('luminousdynamics', {
+                    'type': 'floating-chat',
+                    'floating-chat.donateButton.text': '💜',
+                    'floating-chat.donateButton.background-color': '#E91E63',
+                    'floating-chat.donateButton.text-color': '#fff'
+                });
+            }
         });
     </script>
 </body>
