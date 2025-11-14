@@ -1,0 +1,116 @@
+name: ✨ Feature Request
+description: Suggest an idea or enhancement
+title: "[Feature]: "
+labels: ["enhancement", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your vision! Every idea is a gift that can enrich this sacred space. 💜
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The Need
+      description: What problem or opportunity does this address?
+      placeholder: Describe the challenge or possibility you see
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like to see this addressed?
+      placeholder: Describe your vision for the solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Approaches
+      description: What other ways could we address this?
+      placeholder: Share any alternative solutions you've considered
+
+  - type: dropdown
+    id: alignment
+    attributes:
+      label: Sacred Alignment
+      description: How does this align with our values of sacred reciprocity and infinite love?
+      options:
+        - Strongly aligned - enhances sacred values
+        - Aligned - supports our mission
+        - Neutral - technical improvement
+        - Unsure - need community input
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: User Impact
+      description: Who would benefit from this feature?
+      multiple: true
+      options:
+        - All visitors
+        - Mobile users
+        - Desktop users
+        - Users with disabilities
+        - Contributors
+        - Project maintainers
+        - Community members
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (Your Opinion)
+      description: How important is this to you?
+      options:
+        - Critical - blocks important use cases
+        - High - significantly improves experience
+        - Medium - nice to have
+        - Low - minor enhancement
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or References
+      description: Links to similar features, mockups, or inspiration
+      placeholder: Share any examples or visual references
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas
+      description: Any thoughts on how this could be built?
+      placeholder: Technical suggestions, considerations, or constraints
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Would you be interested in contributing to this feature?
+      options:
+        - label: I'd like to help implement this
+        - label: I can help with design/mockups
+        - label: I can help with testing
+        - label: I can provide feedback during development
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Anything else we should know?
+      placeholder: Share any other thoughts or context
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Sacred Covenant of Conduct
+      options:
+        - label: I have read and agree to the Code of Conduct
+          required: true

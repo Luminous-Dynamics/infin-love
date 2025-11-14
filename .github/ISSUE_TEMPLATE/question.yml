@@ -1,0 +1,59 @@
+name: ❓ Question or Help
+description: Ask a question or get help
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome! No question is too small. We're here to support each other. 💜
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: Ask away...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Using the website
+        - Contributing code
+        - Accessibility features
+        - Mobile experience
+        - Form submission
+        - Sacred reciprocity philosophy
+        - Technical implementation
+        - Project structure
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any background information that would help us answer?
+      placeholder: Share any relevant details
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Have you looked anywhere for answers already?
+      placeholder: E.g., checked the README, searched issues, etc.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this question, you agree to follow our Sacred Covenant of Conduct
+      options:
+        - label: I have read and agree to the Code of Conduct
+          required: true

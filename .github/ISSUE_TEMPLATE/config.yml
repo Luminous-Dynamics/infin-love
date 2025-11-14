@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💜 Community Discussion
+    url: https://github.com/Luminous-Dynamics/infin-love/discussions
+    about: Ask questions, share ideas, or connect with the community
+  - name: 🔒 Security Vulnerability
+    url: mailto:tristan.stoltz@gmail.com
+    about: Report security vulnerabilities privately via email
+  - name: 💝 Support the Project
+    url: https://ko-fi.com/luminousdynamics
+    about: Support this sacred work through Ko-fi
