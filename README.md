@@ -2,9 +2,23 @@
 
 > *A sacred space for reciprocal giving, community circles, and the practice of infinite love through generous flow.*
 
+<div align="center">
+
 [![Live Site](https://img.shields.io/badge/live-infin.love-E91E63?style=for-the-badge)](https://infin.love)
 [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/luminousdynamics)
 [![License](https://img.shields.io/badge/license-Sacred_Commons-FFD700?style=for-the-badge)](https://luminousdynamics.org)
+
+[![HTML Validation](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/html-validation.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/html-validation.yml)
+[![Lighthouse CI](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/lighthouse.yml)
+[![Link Checker](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/link-checker.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/link-checker.yml)
+[![Spell Check](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/spell-check.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/spell-check.yml)
+
+![Accessibility](https://img.shields.io/badge/WCAG-2.1_AA-green?logo=w3c)
+![PWA Ready](https://img.shields.io/badge/PWA-Ready-9C27B0?logo=pwa)
+![Mobile Friendly](https://img.shields.io/badge/Mobile-Friendly-E91E63?logo=mobile)
+![Performance](https://img.shields.io/badge/Performance-95%2B-success?logo=lighthouse)
+
+</div>
 
 ## About
 

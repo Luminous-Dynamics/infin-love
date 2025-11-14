@@ -1,0 +1,40 @@
+name: Spell Check
+
+on:
+  push:
+    branches: [ main, claude/** ]
+    paths:
+      - '**.md'
+      - '**.html'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**.md'
+      - '**.html'
+
+jobs:
+  spellcheck:
+    runs-on: ubuntu-latest
+    name: Check Spelling
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Spell check
+        uses: rojopolis/spellcheck-github-actions@0.36.0
+        with:
+          config_path: .spellcheck.yml
+          task_name: Markdown
+
+      - name: Comment on PR with spelling errors
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '📝 Spelling errors detected. Please review the workflow logs and correct any typos. If a word is intentionally spelled that way, add it to `.spellcheck.yml`.'
+            })
