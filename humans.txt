@@ -1,0 +1,181 @@
+/* TEAM */
+
+Founder & Visionary: Tristan Stoltz
+Contact: tristan.stoltz [at] gmail.com
+Location: Earth
+Role: Sacred reciprocity practitioner, developer, community weaver
+
+Organization: Luminous Dynamics
+Website: https://luminousdynamics.org
+Philosophy: https://evolvingresonantcocreationism.com
+
+/* THANKS */
+
+To all the beings practicing sacred reciprocity across time and space
+To the gift economy traditions of indigenous cultures worldwide
+To Charles Eisenstein for "Sacred Economics"
+To Lewis Hyde for "The Gift"
+To the open source community for showing us the gift economy in action
+To Ko-fi for enabling reciprocal support
+To Formspree for accessible form handling
+To GitHub for hosting this sacred space
+To all future contributors who will enhance this work 💜
+
+/* SITE */
+
+Version: 1.0.0
+Last update: 2025/01/14
+Language: English
+Doctype: HTML5
+IDE: Various editors, honored equally
+Standards: WCAG 2.1 AA, HTML5, CSS3, ES6+
+Components: Pure HTML/CSS/JavaScript (no frameworks)
+Fonts: Georgia, Palatino (system serifs)
+Colors: Purple/pink gradient (#F06292, #BA68C8, #7C4DFF), Sacred gold (#FFD700)
+
+/* TECHNOLOGY */
+
+Hosting: GitHub Pages
+Domain: infin.love
+Analytics: None (privacy-first approach)
+CDN: GitHub's infrastructure
+Form Backend: Formspree.io
+Donation Platform: Ko-fi.com
+SSL: GitHub Pages HTTPS
+
+Architecture:
+- Single-page application
+- Progressive Web App (PWA) capable
+- Mobile-first responsive design
+- Accessibility-first development
+- Performance optimized (95+ Lighthouse score)
+- No cookies, no tracking, no data collection beyond form submissions
+
+/* PRINCIPLES */
+
+✨ Accessibility for all beings
+💜 Love as foundation
+🌊 Sacred reciprocity in practice
+🔓 Open source and transparent
+🌍 Inclusive and welcoming
+⚡ Fast and performant
+🔒 Secure and privacy-respecting
+🎨 Beauty serves purpose
+🤝 Community-driven
+💫 Continuously evolving
+
+/* VALUES */
+
+We believe:
+- Knowledge multiplies when shared
+- Everyone deserves access to sacred spaces
+- Technology can serve consciousness
+- Gift economy creates abundance
+- Trust replaces control
+- Receiving is as sacred as giving
+- The gift must always move
+
+/* CONTRIBUTING */
+
+Want to add your name here?
+
+Contribute to the project:
+https://github.com/Luminous-Dynamics/infin-love
+
+Read guidelines:
+https://github.com/Luminous-Dynamics/infin-love/blob/main/CONTRIBUTING.md
+
+All contributors are welcomed with gratitude. 🙏
+
+/* FUTURE CONTRIBUTORS */
+
+[Your name could be here!]
+
+We honor all who contribute to this sacred work:
+- Code contributions
+- Design enhancements
+- Documentation improvements
+- Accessibility testing
+- Community support
+- Bug reports and feedback
+- Translations
+- Spreading awareness
+
+Every contribution is a gift that enriches the whole.
+
+/* LICENSE */
+
+Sacred Commons License v1.0
+Free to use, modify, and share with attribution
+See LICENSE file for full terms
+
+Copyright (c) 2025 Tristan Stoltz / Luminous Dynamics
+https://github.com/Luminous-Dynamics/infin-love/blob/main/LICENSE
+
+/* STATS */
+
+Lines of code: 2,896+ (and growing)
+Files: 30+ documentation and source files
+Contributors: 1+ (join us!)
+GitHub Stars: Growing ⭐
+Love multiplied: Infinite 💜
+
+/* CONTACT */
+
+Website: https://infin.love
+GitHub: https://github.com/Luminous-Dynamics/infin-love
+Email: tristan.stoltz@gmail.com
+Support: https://ko-fi.com/luminousdynamics
+
+Found a bug? Have an idea? Want to contribute?
+https://github.com/Luminous-Dynamics/infin-love/issues
+
+/* SPECIAL THANKS */
+
+To you, the reader of this file. You took the time to look behind the
+curtain and see the humans behind the technology. That curiosity and
+care is exactly the spirit of sacred reciprocity we're cultivating.
+
+Thank you for being here. 💜
+
+/* QUOTE */
+
+"Love is the only thing that multiplies when shared"
+
+"The gift must always move" - Lewis Hyde
+
+"We are all just walking each other home" - Ram Dass
+
+/* META */
+
+This humans.txt file follows the humans.txt standard
+Learn more: http://humanstxt.org/
+
+Last update: January 14, 2025
+Maintained with love by: Luminous Dynamics
+
+                       _
+                    _ooOoo_
+                   o8888888o
+                   88" . "88
+                   (| -_- |)
+                    O\ = /O
+                ____/`---'\____
+              .   ' \\| |// `.
+               / \\||| : |||// \
+             / _||||| -:- |||||_ \
+               | | \\\ - /// | |
+             | \_| ''\---/'' | |
+              \ .-\__ `-` ___/-. /
+           ___`. .' /--.--\ `. . __
+        ."" '< `.___\_<|>_/___.' >'"".
+       | | : `- \`.;`\ _ /`;.`/ - ` : | |
+         \ \ `-. \_ __\ /__ _/ .-` / /
+ ======`-.____`-.___\_____/___.-`____.-'======
+                    `=---='
+
+             Built with consciousness
+             Shared with love
+             Held in sacred reciprocity
+
+             ∞ Infin.Love ∞
