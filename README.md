@@ -7,9 +7,11 @@
 [![Live Site](https://img.shields.io/badge/live-infin.love-E91E63?style=for-the-badge)](https://infin.love)
 [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/luminousdynamics)
 [![License](https://img.shields.io/badge/license-Sacred_Commons-FFD700?style=for-the-badge)](LICENSE)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=for-the-badge)](#contributors)
 
 [![HTML Validation](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/html-validation.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/html-validation.yml)
 [![Lighthouse CI](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/lighthouse.yml)
+[![CodeQL](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/codeql.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/codeql.yml)
 [![Link Checker](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/link-checker.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/link-checker.yml)
 [![Spell Check](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/spell-check.yml/badge.svg)](https://github.com/Luminous-Dynamics/infin-love/actions/workflows/spell-check.yml)
 
@@ -18,6 +20,7 @@
 ![Mobile Friendly](https://img.shields.io/badge/Mobile-Friendly-E91E63?logo=mobile)
 ![Performance](https://img.shields.io/badge/Performance-95%2B-success?logo=lighthouse)
 ![Community](https://img.shields.io/badge/Community_Health-100%25-brightgreen)
+![Security](https://img.shields.io/badge/Security-CodeQL-blue?logo=github)
 ![Made with Love](https://img.shields.io/badge/Made_with-💜_Love-E91E63)
 
 [Explore the Site](https://infin.love) • [Join the Community](https://github.com/Luminous-Dynamics/infin-love/discussions) • [Contribute](#-quick-start-for-contributors) • [Learn More](#-philosophy)
@@ -54,8 +57,9 @@
 - 100% GitHub Community Health Standards
 - WCAG 2.1 AA Accessibility Compliant
 - 95+ Lighthouse Scores (Performance, Accessibility, SEO)
-- 10,000+ lines of comprehensive documentation
-- Complete CI/CD automation
+- 18,000+ lines of comprehensive documentation (33 files)
+- 11 automated CI/CD workflows
+- Enterprise-grade security (CodeQL + dependency review)
 
 💜 **Values-Driven**
 - Privacy-respecting (no tracking, no surveillance)
@@ -84,9 +88,11 @@
 
 **Want to contribute? Welcome! 🙌**
 
-1. **New to contributing?** → Start with **[ONBOARDING.md](ONBOARDING.md)** (comprehensive guide)
-2. **Ready to code?** → See **[CONTRIBUTING.md](CONTRIBUTING.md)** (contribution guidelines)
-3. **Looking for tasks?** → Browse **[Good First Issues](https://github.com/Luminous-Dynamics/infin-love/labels/good-first-issue)**
+1. **Complete beginner?** → Start with **[QUICK_START.md](QUICK_START.md)** (5-minute guide)
+2. **Need guidance?** → Follow **[LEARNING_PATHS.md](LEARNING_PATHS.md)** (7 guided journeys)
+3. **Want examples?** → See **[EXAMPLES.md](EXAMPLES.md)** (practical code patterns)
+4. **Comprehensive guide?** → Read **[ONBOARDING.md](ONBOARDING.md)** (1,000+ lines)
+5. **Looking for tasks?** → Browse **[Good First Issues](https://github.com/Luminous-Dynamics/infin-love/labels/good-first-issue)**
 
 **Quick contribution:**
 ```bash
@@ -140,10 +146,10 @@ Learn more about participating: **[COMMUNITY.md](COMMUNITY.md)**
 
 ### Technical Excellence
 - ✅ **No Build Process** - Pure HTML/CSS/JavaScript
-- ✅ **Automated Testing** - 5 CI/CD workflows ensure quality
-- ✅ **Security** - Content Security Policy, HTTPS, no tracking
+- ✅ **Automated Testing** - 11 CI/CD workflows ensure quality
+- ✅ **Security** - CodeQL analysis, dependency review, CSP, HTTPS
 - ✅ **SEO Optimized** - Open Graph, structured data, sitemap
-- ✅ **Well Documented** - 24 comprehensive documentation files
+- ✅ **Well Documented** - 33 comprehensive documentation files (18,000+ lines)
 
 ### Community Features
 - ✅ **Gift Circle Framework** - Structured giving and receiving
@@ -159,9 +165,14 @@ Learn more about participating: **[COMMUNITY.md](COMMUNITY.md)**
 We have **comprehensive documentation** for all audiences:
 
 ### 🆕 Getting Started
+- **[QUICK_START.md](QUICK_START.md)** - 5-minute quick start guide
+- **[LEARNING_PATHS.md](LEARNING_PATHS.md)** - Guided contributor journeys (7 paths)
 - **[ONBOARDING.md](ONBOARDING.md)** - New contributor guide (1,000+ lines)
+- **[EXAMPLES.md](EXAMPLES.md)** - Code patterns & best practices
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute
 - **[SUPPORT.md](SUPPORT.md)** - Getting help
+- **[FAQ.md](FAQ.md)** - Frequently asked questions
+- **[GLOSSARY.md](GLOSSARY.md)** - Terminology definitions
 
 ### 🎨 Design & Development
 - **[DESIGN.md](DESIGN.md)** - Design system & tokens
@@ -175,18 +186,21 @@ We have **comprehensive documentation** for all audiences:
 - **[VISION.md](VISION.md)** - Project philosophy & long-term vision
 - **[ROADMAP.md](ROADMAP.md)** - Feature timeline & priorities
 - **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** - Sacred Covenant
+- **[GOVERNANCE.md](GOVERNANCE.md)** - Decision-making transparency
+- **[MAINTAINERS.md](MAINTAINERS.md)** - Maintainer sustainability guide
 
-### 🔒 Governance & Compliance
+### 🔒 Security & Compliance
 - **[SECURITY.md](SECURITY.md)** - Security policy
 - **[ANALYTICS.md](ANALYTICS.md)** - Privacy-respecting metrics
 - **[LICENSE](LICENSE)** - Sacred Commons License
 - **[CHANGELOG.md](CHANGELOG.md)** - Version history
 
-### 👥 Recognition
+### 👥 Recognition & Media
 - **[CONTRIBUTORS.md](CONTRIBUTORS.md)** - Contributor recognition
+- **[PRESS_KIT.md](PRESS_KIT.md)** - Media resources & sharing
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)** - Current status & metrics
 
-**Complete documentation:** 24 files, 10,000+ lines, fully searchable
+**Complete documentation:** 33 files, 18,000+ lines, fully searchable
 
 ---
 
@@ -312,11 +326,15 @@ This project practices **sacred economics** - support is offered through volunta
 
 **Development Tools:**
 - **Git:** Version control
-- **GitHub Actions:** CI/CD automation (5 workflows)
+- **GitHub Actions:** CI/CD automation (11 workflows)
+  - HTML validation, Lighthouse CI, CodeQL security, dependency review
+  - Link checker, spell checker, stale management, welcomes, auto-labeling
+  - PR comments, auto-assignment
 - **Lighthouse:** Performance & accessibility testing
 - **html5validator:** Markup validation
 - **lychee:** Link checking
 - **pyspelling:** Spell checking
+- **CodeQL:** Advanced security analysis
 
 ### Quality Metrics
 
@@ -377,6 +395,9 @@ npx serve
 
 - ✅ Content Security Policy (CSP)
 - ✅ HTTPS enforcement
+- ✅ CodeQL security analysis (weekly + on every PR)
+- ✅ Dependency vulnerability scanning
+- ✅ License compliance checking
 - ✅ No tracking or surveillance
 - ✅ No cookies or localStorage
 - ✅ External link protection
