@@ -1,0 +1,107 @@
+name: Manage Stale Issues and PRs
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight UTC
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v8
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Days before marking as stale
+          days-before-stale: 60
+
+          # Days before closing after stale label
+          days-before-close: 14
+
+          # Stale issue settings
+          stale-issue-message: |
+            This issue has been automatically marked as stale because it hasn't had activity in 60 days.
+
+            **It will be closed in 14 days if no further activity occurs.**
+
+            If this issue is still relevant:
+            - Add a comment to keep it open
+            - Update with new information
+            - Link to related work
+
+            Thank you for your contribution to Infin.Love! 💜
+
+            *Automated by stale bot - maintained with love, not obligation*
+
+          stale-issue-label: 'status: stale'
+
+          close-issue-message: |
+            This issue has been closed due to inactivity.
+
+            **Don't worry!** You can always:
+            - Reopen this if still relevant
+            - Open a new issue if the context has changed
+            - Reference this in future discussions
+
+            Your contributions matter. Sometimes timing just isn't right. 💜
+
+            *Automated by stale bot - closed with gratitude*
+
+          # Stale PR settings
+          stale-pr-message: |
+            This pull request has been automatically marked as stale because it hasn't had activity in 60 days.
+
+            **It will be closed in 14 days if no further activity occurs.**
+
+            To keep this PR active:
+            - Rebase on latest main
+            - Respond to review comments
+            - Update with progress
+
+            Your contribution is valued! Sometimes PRs need to pause - that's okay. 💜
+
+            *Automated by stale bot - maintained with care*
+
+          stale-pr-label: 'status: stale'
+
+          close-pr-message: |
+            This pull request has been closed due to inactivity.
+
+            **Your work isn't wasted!** You can:
+            - Reopen this when ready to continue
+            - Submit a new PR with updated changes
+            - Have someone else pick up the work
+
+            Thank you for your gift to the community, even if the timing didn't work out. 💜
+
+            *Automated by stale bot - closed with respect*
+
+          # Labels to exempt from stale marking
+          exempt-issue-labels: 'status: blocked,status: on-hold,priority: critical,priority: high,sacred-alignment,help-wanted'
+          exempt-pr-labels: 'status: blocked,status: on-hold,priority: critical,priority: high,work-in-progress'
+
+          # Don't mark as stale if has these assignees
+          exempt-assignees: 'Tristan-Stoltz-ERC'
+
+          # Don't mark as stale if has any assignee
+          exempt-all-assignees: false
+
+          # Don't mark as stale if is a milestone
+          exempt-all-milestones: true
+
+          # Operations per run (rate limiting)
+          operations-per-run: 100
+
+          # Remove stale label if issue/PR receives activity
+          remove-stale-when-updated: true
+
+          # Sort issues/PRs by updated time (oldest first)
+          ascending: true
+
+          # Enable debug logging
+          debug-only: false
