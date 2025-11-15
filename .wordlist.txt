@@ -34,6 +34,7 @@ Github
 GoatCounter
 HSTS
 HTML
+Index
 Infin
 JS
 JSON-LD
@@ -47,6 +48,7 @@ Luminous
 Markdown
 Matomo
 Mermaid
+Navigation
 OKR
 OKRs
 PWA
@@ -106,6 +108,7 @@ http
 https
 i18n
 ico
+index
 infin
 jpeg
 jpg
@@ -125,6 +128,7 @@ mermaid
 metadata
 moderation
 multi
+navigation
 nojekyll
 noopener
 noreferrer
