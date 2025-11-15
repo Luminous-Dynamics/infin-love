@@ -40,6 +40,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **good-first-issue.md**: Template for creating beginner-friendly issues with detailed guidance
 - **.github/SAVED_REPLIES.md**: Maintainer response templates for common situations
 
+### Added - Security Hardening & Quick Start
+- **QUICK_START.md** (300+ lines): Fast 5-minute contributor onboarding guide with essential commands and checklists
+- **codeql.yml**: Advanced CodeQL security analysis workflow running on push, PR, and weekly schedule
+- **dependency-review.yml**: Automated dependency vulnerability scanning with license compliance checks
+- **pr-comment.yml**: Automated helpful comments on new PRs with resources and next-step guidance
+- **auto-assign.yml**: Intelligent auto-assignment of issues and PRs to maintainers
+
 ### Added - Browser & Project Documentation
 - **BROWSERS.md** (400+ lines): Complete browser compatibility matrix with known issues and workarounds
 - **VISION.md** (500+ lines): Project philosophy, long-term vision, and 1/3/10-year goals
@@ -61,10 +68,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced README provides better first impression
 
 ### Changed
-- Increased total documentation from 7,000+ to 12,500+ lines
-- Expanded from 42 to 57 files
-- Enhanced from 4 to 7 automated workflows
+- Increased total documentation from 7,000+ to 15,000+ lines
+- Expanded from 42 to 66 files
+- Enhanced from 4 to 11 automated workflows
 - Improved community health infrastructure from basic to comprehensive
+- Strengthened security posture with automated scanning and dependency review
 
 ## [1.0.0] - 2025-01-14
 

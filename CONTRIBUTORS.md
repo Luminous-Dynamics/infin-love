@@ -265,6 +265,51 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute.
 3. **Frequency**: Updated at least monthly
 4. **Corrections**: Email tristan.stoltz@gmail.com to update your entry
 
+### Using All-Contributors
+
+This project uses the [All Contributors](https://allcontributors.org/) specification for recognizing contributions.
+
+**For Maintainers:**
+
+Add a contributor using the CLI:
+```bash
+# Install if needed
+npm install --save-dev all-contributors-cli
+
+# Add a contributor
+npx all-contributors add <username> <contribution-type>
+
+# Example: Add someone who contributed code
+npx all-contributors add janesmith code
+
+# Example: Add someone who contributed docs and design
+npx all-contributors add johnsmith doc,design
+
+# Generate the table
+npx all-contributors generate
+```
+
+**Contribution Types:**
+- `code` - Code contributions
+- `doc` - Documentation
+- `design` - Design and visual assets
+- `ideas` - Ideas and planning
+- `infra` - Infrastructure (CI/CD, hosting)
+- `maintenance` - Repository maintenance
+- `review` - Reviewing Pull Requests
+- `test` - Testing
+- `tutorial` - Tutorials
+- `a11y` - Accessibility
+- `bug` - Bug reports
+- `question` - Answering questions
+- `talk` - Talks and presentations
+- `translation` - Translations
+- `security` - Security
+- `content` - Content (blog posts, articles)
+- `fundingFinding` - Helping find financial support
+
+See [full emoji key](https://allcontributors.org/docs/en/emoji-key) for all types.
+
 ### Privacy
 
 **Your privacy matters:**
