@@ -1,0 +1,49 @@
+name: PR Helpful Comments
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add helpful comment to PR
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const author = pr.user.login;
+
+            const comment = `## Thank you for your contribution! 🎉
+
+**What happens next:**
+- ⚙️ Automated checks are running now
+- 👀 A maintainer will review within 3-5 days
+- 💬 Feel free to ask questions in comments
+
+**While you wait:**
+- 📖 Review our [Contributing Guidelines](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/CONTRIBUTING.md)
+- ✅ Make sure all checks pass below
+- 🧪 Double-check you've tested your changes
+
+**Helpful resources:**
+- [Testing Guide](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/TESTING.md) - How to test thoroughly
+- [Design System](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/DESIGN.md) - Design guidelines
+- [FAQ](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/FAQ.md) - Common questions
+
+---
+
+**Your contribution is a gift to the community!** Thank you for being part of Infin.Love. 💜
+
+*Automated comment • Sent with love*`;
+
+            github.rest.issues.createComment({
+              issue_number: pr.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
