@@ -1,0 +1,45 @@
+version: 2
+updates:
+  # GitHub Actions dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "Tristan-Stoltz-ERC"
+    assignees:
+      - "Tristan-Stoltz-ERC"
+    labels:
+      - "dependencies"
+      - "github-actions"
+      - "automated"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
+    pull-request-branch-name:
+      separator: "/"
+
+  # Future: npm dependencies (when/if added)
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #   open-pull-requests-limit: 10
+  #   versioning-strategy: increase
+
+# Configuration notes:
+# - Currently only GitHub Actions (no other dependencies)
+# - Updates check weekly on Mondays
+# - Max 5 open PRs to avoid spam
+# - Auto-assigns to maintainer
+# - Clear labeling for organization
+# - Conventional commit format
+
+# When to enable npm:
+# - If we add package.json for dev tools
+# - If we add Node.js dependencies
+# - Uncomment npm section above

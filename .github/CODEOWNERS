@@ -1,0 +1,68 @@
+# Code Owners for Infin.Love
+#
+# This file defines who reviews pull requests for specific files/directories.
+# When someone opens a pull request that modifies files matching a pattern,
+# the specified code owners are automatically requested for review.
+#
+# Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything (unless a later match takes precedence)
+* @Tristan-Stoltz-ERC @Luminous-Dynamics
+
+# Core application files
+/index.html @Tristan-Stoltz-ERC
+/404.html @Tristan-Stoltz-ERC
+/manifest.json @Tristan-Stoltz-ERC
+
+# Documentation (all contributors welcome to improve)
+*.md @Tristan-Stoltz-ERC
+
+# Critical documentation (maintainer review required)
+/README.md @Tristan-Stoltz-ERC
+/LICENSE @Tristan-Stoltz-ERC
+/CODE_OF_CONDUCT.md @Tristan-Stoltz-ERC
+/SECURITY.md @Tristan-Stoltz-ERC
+/VISION.md @Tristan-Stoltz-ERC
+
+# Contribution guidelines
+/CONTRIBUTING.md @Tristan-Stoltz-ERC
+/CONTRIBUTORS.md @Tristan-Stoltz-ERC
+
+# Technical documentation
+/ARCHITECTURE.md @Tristan-Stoltz-ERC
+/DEPLOYMENT.md @Tristan-Stoltz-ERC
+/TESTING.md @Tristan-Stoltz-ERC
+/BROWSERS.md @Tristan-Stoltz-ERC
+
+# SEO and discoverability
+/robots.txt @Tristan-Stoltz-ERC
+/sitemap.xml @Tristan-Stoltz-ERC
+/humans.txt @Tristan-Stoltz-ERC
+
+# GitHub configuration
+/.github/ @Tristan-Stoltz-ERC
+
+# Workflows (CI/CD) - require careful review
+/.github/workflows/ @Tristan-Stoltz-ERC
+
+# Issue/PR templates - can be updated by community
+/.github/ISSUE_TEMPLATE/ @Tristan-Stoltz-ERC
+/.github/pull_request_template.md @Tristan-Stoltz-ERC
+
+# Configuration files
+/.editorconfig @Tristan-Stoltz-ERC
+/.gitattributes @Tristan-Stoltz-ERC
+/.lighthouserc.json @Tristan-Stoltz-ERC
+/.spellcheck.yml @Tristan-Stoltz-ERC
+/.wordlist.txt @Tristan-Stoltz-ERC
+
+# Future: When team grows
+# /docs/ @documentation-team
+# /tests/ @testing-team
+# /.github/workflows/ @devops-team
+
+# Notes for contributors:
+# - Being listed here doesn't mean you're the only one who can contribute
+# - It means you'll be auto-requested for review when files change
+# - Anyone can review and approve PRs
+# - Final merge still requires maintainer approval
