@@ -1,0 +1,52 @@
+labels: [discussion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💬 General Discussion
+
+        This is an open space for conversations that don't fit other categories.
+
+        **Perfect for:**
+        - Introductions ("Hi, I'm new here!")
+        - Philosophical discussions
+        - Questions about gift economy or sacred reciprocity
+        - Brainstorming and exploration
+        - Community building
+        - Anything else on your heart 💜
+
+        **Community Guidelines:**
+        - Be kind and respectful
+        - Assume good intentions
+        - Listen with compassion
+        - Share authentically
+        - Honor differences
+
+        See our [Code of Conduct](../../CODE_OF_CONDUCT.md) for full Sacred Covenant.
+
+  - type: textarea
+    id: content
+    attributes:
+      label: What's on your mind?
+      description: Share your thoughts, questions, reflections
+      placeholder: "I've been thinking about..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **Welcome to the conversation!** 🙏
+
+        This community thrives on authentic dialogue. Your voice matters.
+
+        Feel free to:
+        - Ask questions (there are no "stupid" questions)
+        - Share perspectives
+        - Be vulnerable
+        - Change your mind
+        - Learn together
+
+        **We're glad you're here.** 💜

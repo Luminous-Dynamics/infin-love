@@ -1,0 +1,93 @@
+labels: [local-circle, community]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🌍 Local Gift Circles
+
+        Looking to connect with others practicing sacred reciprocity in your area?
+        Starting a local gift circle? This is the space!
+
+        **Use this template to:**
+        - Find others in your geographic area
+        - Announce a new local circle
+        - Share about your existing circle
+        - Coordinate local gatherings
+
+        See [COMMUNITY.md](../../COMMUNITY.md) for guide on starting local circles. 💜
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: City, region, or general area (be as specific as you're comfortable)
+      placeholder: "Portland, Oregon, USA"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: purpose
+    attributes:
+      label: What brings you here?
+      options:
+        - Looking to join an existing circle in my area
+        - Announcing a new circle I'm starting
+        - Sharing about an existing circle
+        - Looking for others interested in starting one together
+        - Just exploring the idea
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Share more about what you're looking for or offering
+      placeholder: |
+        Tell us more:
+        - What kind of circle are you interested in? (wisdom, creativity, healing, etc.)
+        - Meeting frequency you envision?
+        - Any specific focus or intention?
+        - Current status (just an idea, gathering interest, already meeting, etc.)
+    validations:
+      required: true
+
+  - type: textarea
+    id: contact
+    attributes:
+      label: How can people connect with you?
+      description: Email, social media, or other contact method (only share what you're comfortable making public!)
+      placeholder: "Email: yourname@example.com"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: commitment
+    attributes:
+      label: Circle Commitments
+      description: For existing or forming circles, what are your shared agreements? (Optional)
+      options:
+        - label: Regular meeting schedule
+        - label: Confidentiality agreement
+        - label: Value diversity and inclusion
+        - label: Practice sacred reciprocity
+        - label: Open to newcomers
+        - label: Closed circle (stable membership)
+        - label: In-person meetings
+        - label: Virtual/online meetings
+        - label: Hybrid (both in-person and virtual)
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **Resources for Local Circles:**
+        - [COMMUNITY.md](../../COMMUNITY.md) - Complete guide for starting and sustaining local gift circles
+        - [VISION.md](../../VISION.md) - Philosophy and principles
+        - [CODE_OF_CONDUCT.md](../../CODE_OF_CONDUCT.md) - Sacred Covenant (adaptable for local use)
+
+        **Privacy Note:** Only share contact information you're comfortable making public.
+        This discussion will be visible to anyone viewing this repository.
+
+        **May your circle overflow with love and abundance!** 💜

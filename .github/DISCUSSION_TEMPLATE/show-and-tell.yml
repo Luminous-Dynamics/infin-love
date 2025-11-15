@@ -1,0 +1,70 @@
+labels: [show-and-tell]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎨 Show and Tell
+
+        This is a space to celebrate your work! Whether you've:
+        - Created something inspired by Infin.Love
+        - Built your own gift circle
+        - Written about sacred reciprocity
+        - Made art about giving and receiving
+        - Contributed to this project
+
+        **We'd love to see it!** Your sharing inspires others. 💜
+
+  - type: input
+    id: title
+    attributes:
+      label: What did you create?
+      description: Give your work a title or short description
+      placeholder: "My Local Gift Circle Journey"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Tell us about it
+      description: Share details, images, links, reflections
+      placeholder: |
+        What did you create?
+        What inspired you?
+        What did you learn?
+        Any resources or links to share?
+    validations:
+      required: true
+
+  - type: textarea
+    id: learning
+    attributes:
+      label: What did you learn?
+      description: Insights, challenges, surprises?
+      placeholder: "Through this process, I discovered..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: gratitude
+    attributes:
+      label: Gratitude
+      description: Anyone or anything you'd like to acknowledge?
+      placeholder: "I'm grateful to..."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **Thank you for sharing your gifts with the community!** 🙏
+
+        Your work inspires us all. Feel free to include:
+        - Photos or screenshots
+        - Links to your work
+        - Code snippets or resources
+        - Reflections and learnings
+
+        We celebrate you! 🌟

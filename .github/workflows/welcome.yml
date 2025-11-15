@@ -1,0 +1,67 @@
+name: Welcome
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome first-time contributors
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            ## Welcome to Infin.Love! 💜
+
+            Thank you for opening your first issue! We're grateful you're here.
+
+            **What happens next:**
+            - A maintainer will review your issue within 2-3 days
+            - We may ask clarifying questions
+            - You'll receive updates as we work on this
+
+            **New to contributing?**
+            - 📖 [ONBOARDING.md](https://github.com/Luminous-Dynamics/infin-love/blob/main/ONBOARDING.md) - Complete contributor guide
+            - 🤝 [CODE_OF_CONDUCT.md](https://github.com/Luminous-Dynamics/infin-love/blob/main/CODE_OF_CONDUCT.md) - Our Sacred Covenant
+            - 💬 [Discussions](https://github.com/Luminous-Dynamics/infin-love/discussions) - Ask questions
+
+            **Your contribution is a gift to the community.** Thank you! 🙏
+
+          pr-message: |
+            ## Welcome to Infin.Love! 💜🎉
+
+            Thank you for opening your first pull request! This is a meaningful moment for our community.
+
+            **What happens next:**
+            - Automated checks will run (HTML validation, Lighthouse CI, etc.)
+            - A maintainer will review your changes within 3-5 days
+            - We may suggest improvements or ask questions
+            - Once approved, we'll merge your gift into the project!
+
+            **While you wait:**
+            - Ensure all checks pass (see below)
+            - Review our [CONTRIBUTING.md](https://github.com/Luminous-Dynamics/infin-love/blob/main/CONTRIBUTING.md) guidelines
+            - Feel free to ask questions in the PR comments
+            - Join our [Discussions](https://github.com/Luminous-Dynamics/infin-love/discussions)
+
+            **Tips for a smooth review:**
+            - Make sure your changes align with our values and vision
+            - Test your changes locally
+            - Write clear commit messages
+            - Be open to feedback (we're all learning together!)
+
+            **Your gift matters.** Every contribution, no matter how small, makes Infin.Love better.
+
+            Thank you for being part of this gift circle! 🌟
+
+            ---
+
+            *Need help?* Check out [ONBOARDING.md](https://github.com/Luminous-Dynamics/infin-love/blob/main/ONBOARDING.md) or ask in [Discussions](https://github.com/Luminous-Dynamics/infin-love/discussions).

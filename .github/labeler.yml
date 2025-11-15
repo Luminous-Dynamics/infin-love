@@ -1,0 +1,83 @@
+# Auto-labeling configuration for pull requests
+# Labels are applied based on which files are changed
+
+# Documentation changes
+documentation:
+  - changed-files:
+    - any-glob-to-any-file: ['**/*.md', 'humans.txt', 'robots.txt']
+
+# Design & UI changes
+design:
+  - changed-files:
+    - any-glob-to-any-file: ['*.html', '**/*.css']
+
+# JavaScript/functionality changes
+javascript:
+  - changed-files:
+    - any-glob-to-any-file: ['**/*.js']
+
+# GitHub configuration
+github-config:
+  - changed-files:
+    - any-glob-to-any-file: ['.github/**']
+
+# CI/CD workflows
+ci-cd:
+  - changed-files:
+    - any-glob-to-any-file: ['.github/workflows/**']
+
+# Issue/PR templates
+templates:
+  - changed-files:
+    - any-glob-to-any-file: ['.github/ISSUE_TEMPLATE/**', '.github/DISCUSSION_TEMPLATE/**', '.github/pull_request_template.md']
+
+# Configuration files
+configuration:
+  - changed-files:
+    - any-glob-to-any-file: ['*.json', '*.yml', '*.yaml', '.editorconfig', '.gitattributes', '.lighthouserc.json']
+
+# SEO related
+seo:
+  - changed-files:
+    - any-glob-to-any-file: ['sitemap.xml', 'robots.txt', 'manifest.json']
+
+# Accessibility improvements
+accessibility:
+  - changed-files:
+    - any-glob-to-any-file: ['index.html']
+    - all-globs-to-all-files: ['**/TESTING.md', '**/ACCESSIBILITY.md']
+
+# Community files
+community:
+  - changed-files:
+    - any-glob-to-any-file: ['CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'COMMUNITY.md', 'GOVERNANCE.md']
+
+# Vision & philosophy
+sacred-alignment:
+  - changed-files:
+    - any-glob-to-any-file: ['VISION.md', 'LICENSE']
+
+# Development guides
+development:
+  - changed-files:
+    - any-glob-to-any-file: ['ARCHITECTURE.md', 'DESIGN.md', 'TESTING.md', 'DEPLOYMENT.md', 'BROWSERS.md']
+
+# Onboarding & support
+onboarding:
+  - changed-files:
+    - any-glob-to-any-file: ['ONBOARDING.md', 'SUPPORT.md', 'README.md']
+
+# Project management
+project-management:
+  - changed-files:
+    - any-glob-to-any-file: ['ROADMAP.md', 'PROJECT_STATUS.md', 'CHANGELOG.md']
+
+# Security
+security:
+  - changed-files:
+    - any-glob-to-any-file: ['SECURITY.md', '.github/workflows/security*.yml']
+
+# Dependencies
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file: ['package.json', 'package-lock.json', '.github/dependabot.yml']

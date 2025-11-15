@@ -1,0 +1,62 @@
+labels: [enhancement, community-input]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Share Your Idea
+
+        Thank you for taking the time to share your vision for Infin.Love! All ideas are gifts to the community.
+
+        This space is for brainstorming and exploration. No idea is too small or too big. 💜
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+      description: Describe your vision, suggestion, or feature request
+      placeholder: "I envision..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this important?
+      description: What need does this serve? Who would benefit?
+      placeholder: "This would help..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: how
+    attributes:
+      label: Any thoughts on implementation?
+      description: If you have ideas on how this could work, share them! (Optional)
+      placeholder: "This could be implemented by..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Would you like to contribute to this?
+      description: No obligation! But if you'd like to help make this real, let us know.
+      options:
+        - label: I'd like to help implement this idea
+        - label: I can help with design/mockups
+        - label: I can help with documentation
+        - label: I can test/provide feedback
+        - label: I can spread the word
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **What happens next?**
+        - The community will discuss and explore your idea
+        - We'll consider alignment with our values and vision
+        - You'll receive feedback and questions
+        - If there's energy and alignment, we'll move forward!
+
+        Thank you for your gift of vision and creativity! 🙏

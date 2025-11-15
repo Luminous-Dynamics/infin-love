@@ -1,0 +1,73 @@
+labels: [story, community]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📖 Share Your Story
+
+        Stories are the heartbeat of community. Your experience with gift economy, sacred reciprocity, or Infin.Love matters.
+
+        This is a sacred space for sharing:
+        - Your journey with giving and receiving
+        - How gift economy has touched your life
+        - Experiences of sacred reciprocity
+        - Challenges and breakthroughs
+        - Moments of grace and abundance
+
+        **All stories are welcome.** Your truth is a gift. 💜
+
+  - type: textarea
+    id: story
+    attributes:
+      label: Your Story
+      description: Share your experience in your own words
+      placeholder: |
+        Tell us your story...
+
+        What happened?
+        How did it feel?
+        What changed?
+        What did you learn?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: What's the main theme of your story?
+      description: Choose what resonates most (optional)
+      options:
+        - Giving freely
+        - Receiving graciously
+        - Abundance through sharing
+        - Trust and flow
+        - Community connection
+        - Transformation
+        - Challenge or struggle
+        - Gratitude
+        - Other
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Sharing Permission
+      description: May we share your story? (Optional - only if you're comfortable)
+      options:
+        - label: You may share this story in blog posts or social media (with attribution)
+        - label: You may share anonymously (remove my name)
+        - label: Keep this in Discussions only
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **Thank you for trusting us with your story.** 🙏
+
+        Your vulnerability and authenticity create safety for others to share.
+
+        Stories weave the fabric of community. Yours matters.
+
+        We're honored to witness your journey. 💜
