@@ -2,6 +2,8 @@
 
 > *Building gift circles. Nurturing sacred reciprocity. Growing together in love.*
 
+**See also:** [VISION.md](VISION.md) - Our philosophy • [GOVERNANCE.md](GOVERNANCE.md) - Decision-making • [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - Community standards • [RESOURCES.md](RESOURCES.md) - Community building resources
+
 ---
 
 ## Welcome to the Infin.Love Community! 💜

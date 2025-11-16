@@ -363,6 +363,169 @@ graph TD
 
 ---
 
+## Deployment Workflow
+
+```mermaid
+graph TD
+    A[Local Development] --> B[Test Changes Locally]
+    B --> C{Tests Pass?}
+    C -->|No| A
+    C -->|Yes| D[Commit to Feature Branch]
+    D --> E[Push to Fork]
+    E --> F[Create Pull Request]
+    F --> G[CI/CD Checks Run]
+    G --> H{All Checks Pass?}
+    H -->|No| I[Review Failures]
+    I --> A
+    H -->|Yes| J[Code Review]
+    J --> K{Approved?}
+    K -->|Changes Requested| A
+    K -->|Yes| L[Merge to Main]
+    L --> M[GitHub Pages Detects Push]
+    M --> N[Validation Workflows Run]
+    N --> O{Workflows Pass?}
+    O -->|No| P[Rollback/Fix]
+    P --> A
+    O -->|Yes| Q[GitHub Pages Builds Site]
+    Q --> R[Deploy to CDN]
+    R --> S[Live at infin.love]
+    S --> T[Deployed! 🚀]
+```
+
+**Learn more:** [DEPLOYMENT.md](DEPLOYMENT.md)
+
+---
+
+## Testing Workflow
+
+```mermaid
+graph TD
+    A[Start Testing] --> B[HTML Validation]
+    B --> C[Keyboard Navigation Test]
+    C --> D{Can Navigate Entire Site?}
+    D -->|No| E[Fix Focus Issues]
+    E --> C
+    D -->|Yes| F[Screen Reader Test]
+    F --> G{Announces Correctly?}
+    G -->|No| H[Fix ARIA/Semantics]
+    H --> F
+    G -->|Yes| I[Cross-Browser Test]
+    I --> J{Works in All Browsers?}
+    J -->|No| K[Fix Compatibility]
+    K --> I
+    J -->|Yes| L[Mobile Responsive Test]
+    L --> M{Works on Mobile?}
+    M -->|No| N[Fix Responsive CSS]
+    N --> L
+    M -->|Yes| O[Performance Test]
+    O --> P{Lighthouse 95+?}
+    P -->|No| Q[Optimize Performance]
+    Q --> O
+    P -->|Yes| R[Accessibility Audit]
+    R --> S{WCAG AA Compliant?}
+    S -->|No| T[Fix A11y Issues]
+    T --> R
+    S -->|Yes| U[All Tests Pass! ✅]
+```
+
+**Learn more:** [TESTING.md](TESTING.md)
+
+---
+
+## Documentation Contribution Flow
+
+```mermaid
+graph TD
+    A[Identify Doc Need] --> B{Doc Exists?}
+    B -->|No| C[Create New Doc]
+    B -->|Yes| D[Enhance Existing Doc]
+
+    C --> E[Follow Markdown Style]
+    D --> E
+
+    E --> F[Add Cross-References]
+    F --> G[Update INDEX.md]
+    G --> H[Add to PROJECT_STATUS]
+    H --> I[Update CHANGELOG]
+    I --> J[Add Terms to .wordlist.txt]
+    J --> K[Test All Links]
+    K --> L{Links Work?}
+    L -->|No| M[Fix Broken Links]
+    M --> K
+    L -->|Yes| N[Run Spell Check]
+    N --> O{Passes?}
+    O -->|No| P[Fix Typos/Add Words]
+    P --> N
+    O -->|Yes| Q[Submit PR]
+    Q --> R[Automated Checks]
+    R --> S{Checks Pass?}
+    S -->|No| T[Review Failures]
+    T --> E
+    S -->|Yes| U[Maintainer Review]
+    U --> V{Approved?}
+    V -->|Changes Requested| E
+    V -->|Yes| W[Merge & Deploy]
+    W --> X[Doc Live! 📚]
+```
+
+**Learn more:** [CONTRIBUTING.md](CONTRIBUTING.md) • [INDEX.md](INDEX.md)
+
+---
+
+## Metrics Tracking Workflow
+
+```mermaid
+graph TD
+    A[First Monday of Month] --> B[Review GitHub Insights]
+    B --> C[Check Traffic Stats]
+    B --> D[Review Issues/PRs]
+    B --> E[Check Contributors]
+
+    C --> F[Automated Metrics]
+    D --> F
+    E --> F
+
+    F --> G[Lighthouse CI Results]
+    F --> H[CodeQL Status]
+    F --> I[Link Checker Status]
+    F --> J[Spell Check Status]
+
+    G --> K[Update METRICS.md]
+    H --> K
+    I --> K
+    J --> K
+
+    K --> L[Qualitative Assessment]
+    L --> M[Community Sentiment]
+    L --> N[Maintainer Wellbeing]
+    L --> O[Values Alignment]
+
+    M --> P[Document Insights]
+    N --> P
+    O --> P
+
+    P --> Q{Quarter End?}
+    Q -->|No| R[Monthly Complete]
+    Q -->|Yes| S[Quarterly Deep Analysis]
+    S --> T[Trend Review]
+    T --> U[Goal Assessment]
+    U --> V[Strategic Planning]
+    V --> W[Update ROADMAP]
+    W --> R
+
+    R --> X{Year End?}
+    X -->|No| Y[Done! 📊]
+    X -->|Yes| Z[Annual Reflection]
+    Z --> AA[Comprehensive Review]
+    AA --> AB[Impact Assessment]
+    AB --> AC[Vision Alignment]
+    AC --> Y
+```
+
+**Learn more:** [METRICS.md](METRICS.md) • [PROJECT_STATUS.md](PROJECT_STATUS.md)
+
+---
+
 ## Using These Diagrams
 
 ### View on GitHub

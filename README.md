@@ -162,7 +162,7 @@ Learn more about participating: **[COMMUNITY.md](COMMUNITY.md)**
 
 ## 📚 Documentation
 
-**🗺️ Lost in the docs? Start with [INDEX.md](INDEX.md) - Your complete navigation map to all 78 files**
+**🗺️ Lost in the docs? Start with [INDEX.md](INDEX.md) - Your complete navigation map to all 80 files**
 
 We have **comprehensive documentation** for all audiences:
 

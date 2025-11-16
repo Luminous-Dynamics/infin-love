@@ -55,6 +55,7 @@
 
 ### Development Guides
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - Full contribution guidelines
+- **[.github/CONTRIBUTION_CHECKLISTS.md](.github/CONTRIBUTION_CHECKLISTS.md)** - Ready-to-use checklists for all contribution types
 - **[EXAMPLES.md](EXAMPLES.md)** - Practical code patterns
 - **[DESIGN.md](DESIGN.md)** - Design system and tokens
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - Technical architecture
@@ -262,6 +263,7 @@
 
 #### Other GitHub Files
 - **[.github/CODEOWNERS](.github/CODEOWNERS)** - Code review assignments
+- **[.github/CONTRIBUTION_CHECKLISTS.md](.github/CONTRIBUTION_CHECKLISTS.md)** - Contribution checklists
 - **[.github/dependabot.yml](.github/dependabot.yml)** - Dependency updates
 - **[.github/FUNDING.yml](.github/FUNDING.yml)** - Funding links
 - **[.github/labeler.yml](.github/labeler.yml)** - Labeler configuration
@@ -273,11 +275,11 @@
 
 ## Documentation Statistics
 
-**Total Files:** 79
+**Total Files:** 80
 **Total Lines:** 20,000+
 **Documentation Files:** 38 primary docs
 **Configuration Files:** 8
-**GitHub Files:** 29
+**GitHub Files:** 30
 **Application Files:** 6
 
 **Coverage:**

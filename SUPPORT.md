@@ -2,6 +2,8 @@
 
 Welcome to the Infin.Love community! We're here to support you on your journey with sacred reciprocity.
 
+**See also:** [FAQ.md](FAQ.md) - Common questions • [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problem-solving • [RESOURCES.md](RESOURCES.md) - External learning resources • [GitHub Discussions](https://github.com/Luminous-Dynamics/infin-love/discussions) - Community support
+
 ## Quick Links
 
 - 🌐 **Live Site**: [infin.love](https://infin.love)

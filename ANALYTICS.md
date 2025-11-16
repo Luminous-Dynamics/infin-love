@@ -2,6 +2,8 @@
 
 > *Measuring impact without compromising privacy. Understanding users without surveilling them.*
 
+**See also:** [METRICS.md](METRICS.md) - Project health tracking • [SECURITY.md](SECURITY.md) - Privacy & security • [GOVERNANCE.md](GOVERNANCE.md) - Data governance
+
 ---
 
 ## Analytics Philosophy

@@ -2,6 +2,8 @@
 
 > *Every pixel with purpose. Every color with meaning. Design as sacred practice.*
 
+**See also:** [EXAMPLES.md](EXAMPLES.md) - Implementation patterns • [ARCHITECTURE.md](ARCHITECTURE.md) - Technical design • [CONTRIBUTING.md](CONTRIBUTING.md) - Design contribution guidelines
+
 ---
 
 ## Design Philosophy

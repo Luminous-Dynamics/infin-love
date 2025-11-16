@@ -2,6 +2,8 @@
 
 > *Power shared, decisions made together, all voices honored.*
 
+**See also:** [MAINTAINERS.md](MAINTAINERS.md) - Maintainer roles • [COMMUNITY.md](COMMUNITY.md) - Community practices • [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - Conflict resolution
+
 ---
 
 ## Governance Philosophy

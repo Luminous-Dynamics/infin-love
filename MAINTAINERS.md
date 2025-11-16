@@ -2,6 +2,8 @@
 
 > *Stewardship as sacred practice. Service as gift. Leadership as love.*
 
+**See also:** [GOVERNANCE.md](GOVERNANCE.md) - Decision-making processes • [METRICS.md](METRICS.md) - Project health tracking • [ROADMAP.md](ROADMAP.md) - Planning & priorities • [SAVED_REPLIES.md](.github/SAVED_REPLIES.md) - Response templates
+
 ---
 
 ## Welcome, Steward!

@@ -2,6 +2,8 @@
 
 > *Where technology meets consciousness, where code becomes prayer, where every commit serves love.*
 
+**See also:** [COMMUNITY.md](COMMUNITY.md) - Community building • [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - Sacred Covenant • [README.md](README.md) - Project overview • [RESOURCES.md](RESOURCES.md) - Gift economy learning
+
 ---
 
 ## Table of Contents

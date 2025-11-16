@@ -2,6 +2,8 @@
 
 > *Infin.Love is designed to work beautifully across all modern browsers and devices.*
 
+**See also:** [TESTING.md](TESTING.md) - Testing procedures • [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Fixing browser issues • [DEPLOYMENT.md](DEPLOYMENT.md) - Browser requirements
+
 ---
 
 ## Browser Support Matrix
