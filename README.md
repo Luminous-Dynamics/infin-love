@@ -57,7 +57,7 @@
 - 100% GitHub Community Health Standards
 - WCAG 2.1 AA Accessibility Compliant
 - 95+ Lighthouse Scores (Performance, Accessibility, SEO)
-- 20,000+ lines of comprehensive documentation (38 primary docs)
+- 20,000+ lines of comprehensive documentation (40 primary docs)
 - 11 automated CI/CD workflows
 - Enterprise-grade security (CodeQL + dependency review)
 
@@ -149,7 +149,7 @@ Learn more about participating: **[COMMUNITY.md](COMMUNITY.md)**
 - ✅ **Automated Testing** - 11 CI/CD workflows ensure quality
 - ✅ **Security** - CodeQL analysis, dependency review, CSP, HTTPS
 - ✅ **SEO Optimized** - Open Graph, structured data, sitemap
-- ✅ **Well Documented** - 38 primary documentation files (20,000+ lines)
+- ✅ **Well Documented** - 40 primary documentation files (20,000+ lines)
 
 ### Community Features
 - ✅ **Gift Circle Framework** - Structured giving and receiving
@@ -168,6 +168,7 @@ We have **comprehensive documentation** for all audiences:
 
 ### 🆕 Getting Started
 - **[QUICK_START.md](QUICK_START.md)** - 5-minute quick start guide
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Essential cheat sheets (bookmark this!)
 - **[LEARNING_PATHS.md](LEARNING_PATHS.md)** - Guided contributor journeys (7 paths)
 - **[ONBOARDING.md](ONBOARDING.md)** - New contributor guide (1,000+ lines)
 - **[EXAMPLES.md](EXAMPLES.md)** - Code patterns & best practices
@@ -178,6 +179,7 @@ We have **comprehensive documentation** for all audiences:
 
 ### 🎨 Design & Development
 - **[DESIGN.md](DESIGN.md)** - Design system & tokens
+- **[STYLE_GUIDE.md](STYLE_GUIDE.md)** - Documentation style guide
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - Technical architecture
 - **[TESTING.md](TESTING.md)** - Testing procedures
 - **[BROWSERS.md](BROWSERS.md)** - Browser compatibility

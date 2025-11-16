@@ -113,6 +113,7 @@ Yes! Our [Sacred Commons License](LICENSE) allows commercial use. We only ask th
 **Absolutely!** We're specifically designed to be welcoming to newcomers:
 
 - [ONBOARDING.md](ONBOARDING.md) - 1,000+ line guide for new contributors
+- [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Essential cheat sheets for common tasks
 - Good first issues labeled and well-documented
 - Patient, kind code review
 - All questions welcomed

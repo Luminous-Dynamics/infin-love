@@ -8,6 +8,7 @@ Welcome to the Infin.Love community! We're here to support you on your journey w
 
 - 🌐 **Live Site**: [infin.love](https://infin.love)
 - 📚 **Documentation**: [README.md](README.md)
+- 🎯 **Quick Reference**: [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Cheat sheets
 - 🤝 **Contributing**: [CONTRIBUTING.md](CONTRIBUTING.md)
 - 🔒 **Security**: [SECURITY.md](SECURITY.md)
 - 🧪 **Testing**: [TESTING.md](TESTING.md)

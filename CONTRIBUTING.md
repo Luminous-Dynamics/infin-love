@@ -23,10 +23,12 @@ We welcome many forms of contribution:
 
 - **Code**: Bug fixes, features, performance improvements
 - **Design**: UI/UX enhancements, accessibility improvements
-- **Content**: Copy improvements, translations, documentation
+- **Content**: Copy improvements, translations, documentation (see [STYLE_GUIDE.md](STYLE_GUIDE.md))
 - **Ideas**: Feature suggestions, architectural proposals
 - **Testing**: Bug reports, accessibility testing, cross-browser testing
 - **Community**: Helping others, answering questions, spreading awareness
+
+**Quick Resources**: [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Essential cheat sheets for common tasks
 
 ### 3. **Getting Started**
 

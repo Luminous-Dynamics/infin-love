@@ -71,6 +71,7 @@ git push origin feature/your-feature-name
 - Add examples to guides
 - Improve README or other docs
 - Translate documentation (future)
+- See [STYLE_GUIDE.md](STYLE_GUIDE.md) for documentation standards
 
 **Design**
 - Suggest color improvements
@@ -867,6 +868,7 @@ git push origin feature/your-feature
 
 **Essential Docs**
 - [README.md](README.md) - Start here
+- [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Cheat sheets (bookmark this!)
 - [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - Community covenant
 - [TESTING.md](TESTING.md) - How to test

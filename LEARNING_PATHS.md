@@ -630,6 +630,8 @@ Closes #XX"
    - [ONBOARDING.md](ONBOARDING.md)
    - [CONTRIBUTING.md](CONTRIBUTING.md)
    - [QUICK_START.md](QUICK_START.md)
+   - [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Cheat sheets
+   - [STYLE_GUIDE.md](STYLE_GUIDE.md) - Documentation standards (essential!)
    - [DESIGN.md](DESIGN.md)
    - [TESTING.md](TESTING.md)
    - [FAQ.md](FAQ.md)

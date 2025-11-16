@@ -170,9 +170,9 @@ For high-resolution assets or custom requests, contact: tristan.stoltz@gmail.com
 ## 📊 Project Statistics
 
 **Codebase:**
-- **66 files** spanning infrastructure, documentation, and automation
-- **15,000+ lines** of code and documentation
-- **9,000+ lines** of contributor-focused documentation alone
+- **82 files** spanning infrastructure, documentation, and automation
+- **20,000+ lines** of code and documentation
+- **40 primary documentation files** for contributors and community
 - **11 automated workflows** for CI/CD, security, and community management
 
 **Quality Metrics:**

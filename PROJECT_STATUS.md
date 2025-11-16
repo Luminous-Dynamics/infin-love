@@ -162,7 +162,7 @@
 - Automated releases
 - Dependency updates (Dependabot)
 
-✅ **Documentation** (36 files, 20,000+ lines)
+✅ **Documentation** (40 files, 20,000+ lines)
 - README: Project overview (enhanced with TOC, quick starts)
 - INDEX: Master documentation map (complete navigation)
 - CONTRIBUTING: Contribution guide
