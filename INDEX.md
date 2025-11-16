@@ -2,7 +2,7 @@
 
 > *Your complete guide to navigating Infin.Love documentation*
 
-**Welcome!** With 76 files and 20,000+ lines of documentation, finding what you need should be easy. This index organizes everything by purpose and audience.
+**Welcome!** With 79 files and 20,000+ lines of documentation, finding what you need should be easy. This index organizes everything by purpose and audience.
 
 **Quick Navigation:**
 - [For New Contributors](#for-new-contributors)
@@ -43,6 +43,9 @@
 8. **[EXAMPLES.md](EXAMPLES.md)** - Code patterns and best practices
 9. **[DIAGRAMS.md](DIAGRAMS.md)** - Visual workflows using Mermaid
 10. **[GLOSSARY.md](GLOSSARY.md)** - 100+ term definitions
+
+### External Learning
+11. **[RESOURCES.md](RESOURCES.md)** - Curated external learning resources for Git, web development, accessibility, open source, design, community building, and gift economy
 
 ---
 
@@ -102,6 +105,7 @@
 
 ### Project Management
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)** - Current status and metrics
+- **[METRICS.md](METRICS.md)** - Project health tracking framework
 - **[ROADMAP.md](ROADMAP.md)** - Feature planning
 - **[CHANGELOG.md](CHANGELOG.md)** - Version history
 
@@ -192,11 +196,13 @@
 - **[LEARNING_PATHS.md](LEARNING_PATHS.md)** - Guided journeys (1,300+ lines)
 - **[LICENSE](LICENSE)** - Sacred Commons License
 - **[MAINTAINERS.md](MAINTAINERS.md)** - Maintainer guide (600+ lines)
+- **[METRICS.md](METRICS.md)** - Project health tracking framework (comprehensive)
 - **[ONBOARDING.md](ONBOARDING.md)** - New contributor guide (1,000+ lines)
 - **[PRESS_KIT.md](PRESS_KIT.md)** - Media resources (700+ lines)
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)** - Current status & metrics
 - **[QUICK_START.md](QUICK_START.md)** - 5-minute quick start (330+ lines)
 - **[README.md](README.md)** - Project overview (enhanced, 445+ lines)
+- **[RESOURCES.md](RESOURCES.md)** - External learning resources (409 lines)
 - **[ROADMAP.md](ROADMAP.md)** - Feature timeline (800+ lines)
 - **[SECURITY.md](SECURITY.md)** - Security policy (159 lines)
 - **[SUPPORT.md](SUPPORT.md)** - Getting help (300+ lines)
@@ -267,19 +273,20 @@
 
 ## Documentation Statistics
 
-**Total Files:** 76
+**Total Files:** 79
 **Total Lines:** 20,000+
-**Documentation Files:** 36 primary docs
+**Documentation Files:** 38 primary docs
 **Configuration Files:** 8
 **GitHub Files:** 29
 **Application Files:** 6
 
 **Coverage:**
-- ✅ Getting Started (5 docs)
+- ✅ Getting Started (6 docs) - includes RESOURCES.md
 - ✅ Development (9 docs)
 - ✅ Community (7 docs)
 - ✅ Governance (4 docs)
 - ✅ Reference (8 docs)
+- ✅ Project Management (4 docs) - includes METRICS.md
 - ✅ Visual Aids (2 docs)
 - ✅ Workflows (11 automated)
 
@@ -301,8 +308,14 @@
 **...learn at my own pace**
 → [LEARNING_PATHS.md](LEARNING_PATHS.md) → Choose your path → Follow the steps
 
+**...learn from external resources**
+→ [RESOURCES.md](RESOURCES.md) → Find curated learning materials → Build your skills
+
 **...start a local gift circle**
 → [COMMUNITY.md](COMMUNITY.md) → [VISION.md](VISION.md) → [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+
+**...track project health**
+→ [METRICS.md](METRICS.md) → [PROJECT_STATUS.md](PROJECT_STATUS.md) → [ROADMAP.md](ROADMAP.md)
 
 **...write an article about this**
 → [PRESS_KIT.md](PRESS_KIT.md) → [README.md](README.md) → [PROJECT_STATUS.md](PROJECT_STATUS.md)

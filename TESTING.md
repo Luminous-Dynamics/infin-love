@@ -2,6 +2,8 @@
 
 This document outlines comprehensive testing procedures for Infin.Love to ensure quality, accessibility, and performance.
 
+**See also:** [EXAMPLES.md](EXAMPLES.md) - Code patterns for writing testable code • [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Fixing test failures • [DIAGRAMS.md](DIAGRAMS.md) - Testing workflow visualizations
+
 ## Table of Contents
 
 - [Quick Testing Checklist](#quick-testing-checklist)

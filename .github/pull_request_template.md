@@ -2,6 +2,8 @@
 
 <!-- Provide a brief description of what this PR accomplishes -->
 
+**Need help?** See [EXAMPLES.md](../EXAMPLES.md) for code patterns • [TROUBLESHOOTING.md](../TROUBLESHOOTING.md) for common issues • [TESTING.md](../TESTING.md) for testing guide
+
 ## Type of Change
 
 <!-- Check all that apply -->
