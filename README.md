@@ -57,7 +57,7 @@
 - 100% GitHub Community Health Standards
 - WCAG 2.1 AA Accessibility Compliant
 - 95+ Lighthouse Scores (Performance, Accessibility, SEO)
-- 18,000+ lines of comprehensive documentation (33 files)
+- 20,000+ lines of comprehensive documentation (38 primary docs)
 - 11 automated CI/CD workflows
 - Enterprise-grade security (CodeQL + dependency review)
 
@@ -149,7 +149,7 @@ Learn more about participating: **[COMMUNITY.md](COMMUNITY.md)**
 - ✅ **Automated Testing** - 11 CI/CD workflows ensure quality
 - ✅ **Security** - CodeQL analysis, dependency review, CSP, HTTPS
 - ✅ **SEO Optimized** - Open Graph, structured data, sitemap
-- ✅ **Well Documented** - 33 comprehensive documentation files (18,000+ lines)
+- ✅ **Well Documented** - 38 primary documentation files (20,000+ lines)
 
 ### Community Features
 - ✅ **Gift Circle Framework** - Structured giving and receiving
@@ -162,7 +162,7 @@ Learn more about participating: **[COMMUNITY.md](COMMUNITY.md)**
 
 ## 📚 Documentation
 
-**🗺️ Lost in the docs? Start with [INDEX.md](INDEX.md) - Your complete navigation map to all 80 files**
+**🗺️ Lost in the docs? Start with [INDEX.md](INDEX.md) - Your complete navigation map to all 82 files**
 
 We have **comprehensive documentation** for all audiences:
 
@@ -202,7 +202,7 @@ We have **comprehensive documentation** for all audiences:
 - **[PRESS_KIT.md](PRESS_KIT.md)** - Media resources & sharing
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)** - Current status & metrics
 
-**Complete documentation:** 36 primary docs, 78 total files, 20,000+ lines, fully searchable
+**Complete documentation:** 40 primary docs, 82 total files, 20,000+ lines, fully searchable
 
 **See also:** [RESOURCES.md](RESOURCES.md) - Curated external learning resources
 

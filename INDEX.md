@@ -2,7 +2,7 @@
 
 > *Your complete guide to navigating Infin.Love documentation*
 
-**Welcome!** With 79 files and 20,000+ lines of documentation, finding what you need should be easy. This index organizes everything by purpose and audience.
+**Welcome!** With 82 files and 20,000+ lines of documentation, finding what you need should be easy. This index organizes everything by purpose and audience.
 
 **Quick Navigation:**
 - [For New Contributors](#for-new-contributors)
@@ -22,10 +22,11 @@
 ### Getting Started (Read First!)
 1. **[README.md](README.md)** - Project overview and quick start
 2. **[QUICK_START.md](QUICK_START.md)** - 5-minute guide to your first contribution
-3. **[ONBOARDING.md](ONBOARDING.md)** - Comprehensive 1,000+ line contributor guide
+3. **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Essential cheat sheets for common tasks
+4. **[ONBOARDING.md](ONBOARDING.md)** - Comprehensive 1,000+ line contributor guide
 
 ### Choose Your Learning Path
-4. **[LEARNING_PATHS.md](LEARNING_PATHS.md)** - 7 guided journeys based on your skill level:
+5. **[LEARNING_PATHS.md](LEARNING_PATHS.md)** - 7 guided journeys based on your skill level:
    - Complete Beginner
    - Web Development Beginner
    - Experienced Developer
@@ -35,17 +36,17 @@
    - Community Builder
 
 ### When You're Stuck
-5. **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Solutions to common problems
-6. **[FAQ.md](FAQ.md)** - 80+ frequently asked questions
-7. **[SUPPORT.md](SUPPORT.md)** - How to get help
+6. **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Solutions to common problems
+7. **[FAQ.md](FAQ.md)** - 80+ frequently asked questions
+8. **[SUPPORT.md](SUPPORT.md)** - How to get help
 
 ### Practical Examples
-8. **[EXAMPLES.md](EXAMPLES.md)** - Code patterns and best practices
-9. **[DIAGRAMS.md](DIAGRAMS.md)** - Visual workflows using Mermaid
-10. **[GLOSSARY.md](GLOSSARY.md)** - 100+ term definitions
+9. **[EXAMPLES.md](EXAMPLES.md)** - Code patterns and best practices
+10. **[DIAGRAMS.md](DIAGRAMS.md)** - Visual workflows using Mermaid
+11. **[GLOSSARY.md](GLOSSARY.md)** - 100+ term definitions
 
 ### External Learning
-11. **[RESOURCES.md](RESOURCES.md)** - Curated external learning resources for Git, web development, accessibility, open source, design, community building, and gift economy
+12. **[RESOURCES.md](RESOURCES.md)** - Curated external learning resources for Git, web development, accessibility, open source, design, community building, and gift economy
 
 ---
 
@@ -158,6 +159,7 @@
 - **[GLOSSARY.md](GLOSSARY.md)** - 100+ definitions
 - **[FAQ.md](FAQ.md)** - 80+ answered questions
 - **[VISION.md](VISION.md)** - Philosophy and beliefs
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Essential cheat sheets
 
 ### Technical Reference
 - **[DESIGN.md](DESIGN.md)** - Design system tokens
@@ -167,6 +169,7 @@
 
 ### Process Documentation
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute
+- **[STYLE_GUIDE.md](STYLE_GUIDE.md)** - Documentation style guide
 - **[TESTING.md](TESTING.md)** - Testing procedures
 - **[DEPLOYMENT.md](DEPLOYMENT.md)** - Deployment process
 - **[SECURITY.md](SECURITY.md)** - Security procedures
@@ -201,11 +204,13 @@
 - **[ONBOARDING.md](ONBOARDING.md)** - New contributor guide (1,000+ lines)
 - **[PRESS_KIT.md](PRESS_KIT.md)** - Media resources (700+ lines)
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)** - Current status & metrics
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Essential cheat sheets (comprehensive)
 - **[QUICK_START.md](QUICK_START.md)** - 5-minute quick start (330+ lines)
 - **[README.md](README.md)** - Project overview (enhanced, 445+ lines)
 - **[RESOURCES.md](RESOURCES.md)** - External learning resources (409 lines)
 - **[ROADMAP.md](ROADMAP.md)** - Feature timeline (800+ lines)
 - **[SECURITY.md](SECURITY.md)** - Security policy (159 lines)
+- **[STYLE_GUIDE.md](STYLE_GUIDE.md)** - Documentation style guide (comprehensive)
 - **[SUPPORT.md](SUPPORT.md)** - Getting help (300+ lines)
 - **[TESTING.md](TESTING.md)** - Testing guide (494 lines)
 - **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Problem-solving (918 lines)
@@ -275,19 +280,19 @@
 
 ## Documentation Statistics
 
-**Total Files:** 80
+**Total Files:** 82
 **Total Lines:** 20,000+
-**Documentation Files:** 38 primary docs
+**Documentation Files:** 40 primary docs
 **Configuration Files:** 8
 **GitHub Files:** 30
 **Application Files:** 6
 
 **Coverage:**
-- ✅ Getting Started (6 docs) - includes RESOURCES.md
+- ✅ Getting Started (7 docs) - includes QUICK_REFERENCE, RESOURCES
 - ✅ Development (9 docs)
 - ✅ Community (7 docs)
 - ✅ Governance (4 docs)
-- ✅ Reference (8 docs)
+- ✅ Reference (10 docs) - includes QUICK_REFERENCE, STYLE_GUIDE
 - ✅ Project Management (4 docs) - includes METRICS.md
 - ✅ Visual Aids (2 docs)
 - ✅ Workflows (11 automated)
