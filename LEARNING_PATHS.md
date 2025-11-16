@@ -1078,6 +1078,8 @@ Discuss: [Link to Discussion]
 
 **Applicable to all paths:**
 
+**📚 For comprehensive external learning resources:** See **[RESOURCES.md](RESOURCES.md)** - curated guides for Git, web development, accessibility, open source, design, community building, and gift economy.
+
 ### Official Project Docs
 - [README.md](README.md) - Project overview
 - [ONBOARDING.md](ONBOARDING.md) - Complete contributor guide
@@ -1184,6 +1186,6 @@ Discuss: [Link to Discussion]
 
 **Next step:** Choose your path above and dive in!
 
-**Resources:** [QUICK_START.md](QUICK_START.md) • [ONBOARDING.md](ONBOARDING.md) • [CONTRIBUTING.md](CONTRIBUTING.md) • [FAQ.md](FAQ.md)
+**Resources:** [QUICK_START.md](QUICK_START.md) • [ONBOARDING.md](ONBOARDING.md) • [RESOURCES.md](RESOURCES.md) • [EXAMPLES.md](EXAMPLES.md) • [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 
 </div>

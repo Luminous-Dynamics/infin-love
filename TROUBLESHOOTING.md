@@ -4,6 +4,8 @@
 
 This guide helps you quickly resolve common issues when contributing to Infin.Love. If you don't find your answer here, check [FAQ.md](FAQ.md) or ask in [Discussions](https://github.com/Luminous-Dynamics/infin-love/discussions).
 
+**See also:** [EXAMPLES.md](EXAMPLES.md) - Code patterns and best practices to prevent common issues
+
 **Quick Navigation:**
 - [Git & GitHub Issues](#git--github-issues)
 - [Development Issues](#development-issues)

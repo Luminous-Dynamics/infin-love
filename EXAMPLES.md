@@ -4,7 +4,7 @@
 
 This guide provides real-world code examples for common contribution tasks. Each example follows our design system, accessibility standards, and gift economy values.
 
-**See also:** [DESIGN.md](DESIGN.md) • [CONTRIBUTING.md](CONTRIBUTING.md) • [QUICK_START.md](QUICK_START.md)
+**See also:** [DESIGN.md](DESIGN.md) • [CONTRIBUTING.md](CONTRIBUTING.md) • [QUICK_START.md](QUICK_START.md) • [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 
 ---
 

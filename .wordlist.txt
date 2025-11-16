@@ -48,6 +48,7 @@ Luminous
 Markdown
 Matomo
 Mermaid
+Metrics
 Navigation
 OKR
 OKRs
@@ -56,6 +57,8 @@ Plausible
 README
 RTL
 Reciprocity
+Refactoring
+Resources
 Reddit
 Resonant
 SEO
@@ -86,6 +89,7 @@ codeowners
 codeql
 config
 cryptocurrency
+curated
 defer
 dependabot
 devops
@@ -126,6 +130,7 @@ md
 mediator
 mermaid
 metadata
+metrics
 moderation
 multi
 navigation
@@ -142,10 +147,13 @@ online
 otf
 png
 px
+qualitative
+quantitative
 querySelector
 reciprocity
 regex
 rem
+resources
 restorative
 rgba
 roadmap

@@ -162,6 +162,8 @@ Learn more about participating: **[COMMUNITY.md](COMMUNITY.md)**
 
 ## 📚 Documentation
 
+**🗺️ Lost in the docs? Start with [INDEX.md](INDEX.md) - Your complete navigation map to all 78 files**
+
 We have **comprehensive documentation** for all audiences:
 
 ### 🆕 Getting Started
@@ -200,7 +202,9 @@ We have **comprehensive documentation** for all audiences:
 - **[PRESS_KIT.md](PRESS_KIT.md)** - Media resources & sharing
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)** - Current status & metrics
 
-**Complete documentation:** 33 files, 18,000+ lines, fully searchable
+**Complete documentation:** 36 primary docs, 78 total files, 20,000+ lines, fully searchable
+
+**See also:** [RESOURCES.md](RESOURCES.md) - Curated external learning resources
 
 ---
 

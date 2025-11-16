@@ -2,6 +2,8 @@
 
 First, thank you for considering contributing to this sacred space. Every contribution is a gift that enriches the whole.
 
+**See also:** [DIAGRAMS.md](DIAGRAMS.md) - Visual workflow diagrams • [QUICK_START.md](QUICK_START.md) - 5-minute guide • [EXAMPLES.md](EXAMPLES.md) - Code patterns
+
 ## Sacred Principles
 
 This project practices **sacred reciprocity**. We welcome contributions not as transactions but as gifts that strengthen our web of connection. Whether you're fixing a typo or adding a major feature, your contribution matters.
